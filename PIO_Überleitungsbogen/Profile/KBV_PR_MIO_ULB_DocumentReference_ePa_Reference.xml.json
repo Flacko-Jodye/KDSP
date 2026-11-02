@@ -1,0 +1,365 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_DocumentReference_ePa_Reference",
+  "title": "KBV_PR_MIO_ULB_DocumentReference_ePa_Reference",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Hier kann auf ein externes Dokument verwiesen und/oder ein Dokument angehängt werden.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "fhircomposition",
+      "uri": "http://hl7.org/fhir/composition",
+      "name": "FHIR Composition"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "xds",
+      "uri": "http://ihe.net/xds",
+      "name": "XDS metadata equivalent"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.meta",
+        "path": "DocumentReference.meta",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.meta.versionId",
+        "path": "DocumentReference.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.lastUpdated",
+        "path": "DocumentReference.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.source",
+        "path": "DocumentReference.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.profile",
+        "path": "DocumentReference.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference|1.0.0"
+      },
+      {
+        "id": "DocumentReference.meta.security",
+        "path": "DocumentReference.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.tag",
+        "path": "DocumentReference.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.implicitRules",
+        "path": "DocumentReference.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.language",
+        "path": "DocumentReference.language",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.text",
+        "path": "DocumentReference.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "DocumentReference.text.status",
+        "path": "DocumentReference.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "DocumentReference.contained",
+        "path": "DocumentReference.contained",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier",
+        "path": "DocumentReference.masterIdentifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.status",
+        "path": "DocumentReference.status",
+        "patternCode": "current"
+      },
+      {
+        "id": "DocumentReference.docStatus",
+        "path": "DocumentReference.docStatus",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.category",
+        "path": "DocumentReference.category",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.subject.reference",
+        "path": "DocumentReference.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.subject.type",
+        "path": "DocumentReference.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject.identifier",
+        "path": "DocumentReference.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject.display",
+        "path": "DocumentReference.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.date",
+        "path": "DocumentReference.date",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.author",
+        "path": "DocumentReference.author",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.authenticator",
+        "path": "DocumentReference.authenticator",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.custodian",
+        "path": "DocumentReference.custodian",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo",
+        "path": "DocumentReference.relatesTo",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.description",
+        "path": "DocumentReference.description",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.securityLabel",
+        "path": "DocumentReference.securityLabel",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content",
+        "path": "DocumentReference.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "exists",
+              "path": "attachment.url"
+            }
+          ],
+          "rules": "closed"
+        },
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument",
+        "path": "DocumentReference.content",
+        "sliceName": "ePA-Dokument",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment",
+        "path": "DocumentReference.content.attachment",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.language",
+        "path": "DocumentReference.content.attachment.language",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.data",
+        "path": "DocumentReference.content.attachment.data",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.url",
+        "path": "DocumentReference.content.attachment.url",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.size",
+        "path": "DocumentReference.content.attachment.size",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.hash",
+        "path": "DocumentReference.content.attachment.hash",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.title",
+        "path": "DocumentReference.content.attachment.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.attachment.creation",
+        "path": "DocumentReference.content.attachment.creation",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:ePA-Dokument.format",
+        "path": "DocumentReference.content.format",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang",
+        "path": "DocumentReference.content",
+        "sliceName": "dokumentenanhang",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment",
+        "path": "DocumentReference.content.attachment",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_MIME_Types|1.0.0"
+        }
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.language",
+        "path": "DocumentReference.content.attachment.language",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.data",
+        "path": "DocumentReference.content.attachment.data",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.url",
+        "path": "DocumentReference.content.attachment.url",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.size",
+        "path": "DocumentReference.content.attachment.size",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.hash",
+        "path": "DocumentReference.content.attachment.hash",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.title",
+        "path": "DocumentReference.content.attachment.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.attachment.creation",
+        "path": "DocumentReference.content.attachment.creation",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content:dokumentenanhang.format",
+        "path": "DocumentReference.content.format",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context",
+        "path": "DocumentReference.context",
+        "max": "0"
+      }
+    ]
+  }
+}

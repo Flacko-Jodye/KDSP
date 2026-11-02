@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_File_Location",
+  "version": "1.0.0",
+  "name": "KBV_EX_MIO_ULB_Consent_File_Location",
+  "title": "KBV_EX_MIO_ULB_Consent_File_Location",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Diese Extension bildet den Ablageort von persönlichen Erklärungen ab.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "fhirpath",
+      "expression": "Consent.source.ofType(Reference).display"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Diese Extension bildet den Ablageort von persönlichen Erklärungen ab."
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_File_Location"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]:valueAddress",
+        "path": "Extension.value[x]",
+        "sliceName": "valueAddress",
+        "min": 1,
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Street_Address|1.3.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.extension",
+        "path": "Extension.value[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.extension:Stadtteil",
+        "path": "Extension.value[x].extension",
+        "sliceName": "Stadtteil",
+        "min": 0
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.extension:Stadtteil.value[x]",
+        "path": "Extension.value[x].extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.extension:Stadtteil.value[x]:valueString",
+        "path": "Extension.value[x].extension.valueString",
+        "sliceName": "valueString",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.state",
+        "path": "Extension.value[x].state",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x]:valueAddress.period",
+        "path": "Extension.value[x].period",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel",
+  "title": "KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil bündelt die einzelnen Elemente der Funktionsbeurteilung nach Barthel, für den Fall, dass der Barthel-Index nicht vollständig sondern nur ausgewählte Funktionen beurteilt werden.",
+  "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ClinicalImpression",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ClinicalImpression",
+        "path": "ClinicalImpression",
+        "definition": "Dieses Profil bündelt die einzelnen Elemente der Funktionsbeurteilung nach Barthel, für den Fall, dass der Barthel-Index nicht vollständig sondern nur ausgewählte Funktionen beurteilt werden."
+      },
+      {
+        "id": "ClinicalImpression.meta",
+        "path": "ClinicalImpression.meta",
+        "min": 1
+      },
+      {
+        "id": "ClinicalImpression.meta.versionId",
+        "path": "ClinicalImpression.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.meta.lastUpdated",
+        "path": "ClinicalImpression.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.meta.source",
+        "path": "ClinicalImpression.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.meta.profile",
+        "path": "ClinicalImpression.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel|1.0.0"
+      },
+      {
+        "id": "ClinicalImpression.meta.security",
+        "path": "ClinicalImpression.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.meta.tag",
+        "path": "ClinicalImpression.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.implicitRules",
+        "path": "ClinicalImpression.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.language",
+        "path": "ClinicalImpression.language",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.text",
+        "path": "ClinicalImpression.text"
+      },
+      {
+        "id": "ClinicalImpression.text.status",
+        "path": "ClinicalImpression.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "ClinicalImpression.contained",
+        "path": "ClinicalImpression.contained",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.identifier",
+        "path": "ClinicalImpression.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.status",
+        "path": "ClinicalImpression.status",
+        "patternCode": "completed"
+      },
+      {
+        "id": "ClinicalImpression.statusReason",
+        "path": "ClinicalImpression.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.code",
+        "path": "ClinicalImpression.code",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.description",
+        "path": "ClinicalImpression.description",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject",
+        "path": "ClinicalImpression.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.reference",
+        "path": "ClinicalImpression.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.type",
+        "path": "ClinicalImpression.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier",
+        "path": "ClinicalImpression.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.display",
+        "path": "ClinicalImpression.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.encounter",
+        "path": "ClinicalImpression.encounter",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.effective[x]",
+        "path": "ClinicalImpression.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.effective[x]:effectiveDateTime",
+        "path": "ClinicalImpression.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.date",
+        "path": "ClinicalImpression.date",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor",
+        "path": "ClinicalImpression.assessor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.assessor.reference",
+        "path": "ClinicalImpression.assessor.reference",
+        "min": 1
+      },
+      {
+        "id": "ClinicalImpression.assessor.type",
+        "path": "ClinicalImpression.assessor.type",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier",
+        "path": "ClinicalImpression.assessor.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.display",
+        "path": "ClinicalImpression.assessor.display",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.previous",
+        "path": "ClinicalImpression.previous",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.problem",
+        "path": "ClinicalImpression.problem",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.investigation",
+        "path": "ClinicalImpression.investigation",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code",
+        "path": "ClinicalImpression.investigation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding",
+        "path": "ClinicalImpression.investigation.code.coding",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.text",
+        "path": "ClinicalImpression.investigation.code.text",
+        "min": 1,
+        "patternString": "Einzelne Funktionen nach Barthel",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.item",
+        "path": "ClinicalImpression.investigation.item",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Mobility|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Transfer|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Toileting|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Dressing|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Feeding|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bathing|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Grooming|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.item.reference",
+        "path": "ClinicalImpression.investigation.item.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.item.type",
+        "path": "ClinicalImpression.investigation.item.type",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.investigation.item.identifier",
+        "path": "ClinicalImpression.investigation.item.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.investigation.item.display",
+        "path": "ClinicalImpression.investigation.item.display",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.protocol",
+        "path": "ClinicalImpression.protocol",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.summary",
+        "path": "ClinicalImpression.summary",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.finding",
+        "path": "ClinicalImpression.finding",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.prognosisCodeableConcept",
+        "path": "ClinicalImpression.prognosisCodeableConcept",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.prognosisReference",
+        "path": "ClinicalImpression.prognosisReference",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.supportingInfo",
+        "path": "ClinicalImpression.supportingInfo",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.note",
+        "path": "ClinicalImpression.note",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2035 @@
+{
+  "resourceType": "ValueSet",
+  "id": "KBV-VS-MIO-ULB-Risk",
+  "url": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Risk",
+  "version": "1.0.0",
+  "name": "KBV_VS_MIO_ULB_Risk",
+  "title": "Risiko",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://mio.kbv.de"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Valueset enthält die Codes zur Beschreibung von Risiko.",
+  "immutable": false,
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "concept": [
+          {
+            "code": "427631000",
+            "display": "At risk of venous thromboembolus (finding)"
+          },
+          {
+            "code": "129839007",
+            "display": "At risk for falls (finding)"
+          },
+          {
+            "code": "281694009+111360009",
+            "display": "Finding of at risk (finding) + Obstipation (disorder)"
+          },
+          {
+            "code": "129845004",
+            "display": "At risk for imbalanced nutrition, less than body requirements (finding)"
+          },
+          {
+            "code": "67722007",
+            "display": "At risk for joint contractures (finding)"
+          },
+          {
+            "code": "281694009+48340000",
+            "display": "Finding of at risk (finding) + Incontinence (finding)"
+          },
+          {
+            "code": "285304000",
+            "display": "At risk of pressure ulcer (finding)"
+          },
+          {
+            "code": "704448006",
+            "display": "Tendency to wander (finding)"
+          },
+          {
+            "code": "704420006",
+            "display": "At risk of dehydration (finding)"
+          },
+          {
+            "code": "371736008",
+            "display": "At risk for aspiration (finding)"
+          },
+          {
+            "code": "281694009+233604007",
+            "display": "Finding of at risk (finding) + Pneumonia (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "281694009"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "d683169c-619a-11ed-95f5-005056ad7401",
+    "timestamp": "2022-11-11T08:28:37+00:00",
+    "total": 323,
+    "offset": 0,
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "427631000",
+        "display": "At risk of venous thromboembolus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129839007",
+        "display": "At risk for falls (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "281694009+111360009",
+        "display": "Finding of at risk (finding) + Obstipation (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129845004",
+        "display": "At risk for imbalanced nutrition, less than body requirements (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "67722007",
+        "display": "At risk for joint contractures (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "281694009+48340000",
+        "display": "Finding of at risk (finding) + Incontinence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "285304000",
+        "display": "At risk of pressure ulcer (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704448006",
+        "display": "Tendency to wander (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704420006",
+        "display": "At risk of dehydration (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "371736008",
+        "display": "At risk for aspiration (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "281694009+233604007",
+        "display": "Finding of at risk (finding) + Pneumonia (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1017198002",
+        "display": "At increased risk of forced marriage (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1017199005",
+        "display": "At increased risk of financial abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1017200008",
+        "display": "At increased risk of institutional abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1017202000",
+        "display": "At increased risk of human trafficking (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1144302003",
+        "display": "At high risk of bleeding due to vitamin K epoxide reductase complex 1 rapid metabolizer (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1144779008",
+        "display": "At increased risk of being underweight (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1144780006",
+        "display": "At increased risk of embolism (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1144845004",
+        "display": "Risk of suicide decreased (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1148760001",
+        "display": "At risk of recurrent malignant neoplasm (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "115641000119100",
+        "display": "At increased risk of malignant hyperthermia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1156957002",
+        "display": "At increased risk of food intake greater than requirement (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162398002",
+        "display": "Adverse health risk due to mold in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162399005",
+        "display": "Adverse health risk due to radon in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162400003",
+        "display": "Adverse health risk due to carbon monoxide in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162547009",
+        "display": "Adverse health risk due to lead in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162548004",
+        "display": "At risk due to lack of smoke detector in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162549007",
+        "display": "At risk due to lack of carbon monoxide detector in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162550007",
+        "display": "Adverse health risk due to absence of sink in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162551006",
+        "display": "Adverse health risk due to absence of toilet in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162552004",
+        "display": "Adverse health risk due to infestation of residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1162553009",
+        "display": "Adverse health risk due to asbestos in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1184692002",
+        "display": "At risk due to lack of fire extinguisher in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1184694001",
+        "display": "Adverse health risk due to lack of equipment for safe food storage in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1184697008",
+        "display": "Adverse health risk due to lack of food preparation equipment in residence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1187302009",
+        "display": "At increased risk of running away (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "120871000119108",
+        "display": "Systolic heart failure stage B (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "120901000119108",
+        "display": "Diastolic heart failure stage B (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "128331000119100",
+        "display": "High risk for cervical cancer (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129689002",
+        "display": "At risk for nutritional problem (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129690006",
+        "display": "At risk for elimination problem (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129691005",
+        "display": "At risk for constipation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129692003",
+        "display": "At risk for urge incontinence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129693008",
+        "display": "At risk for imbalanced fluid volume (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129694002",
+        "display": "At risk for disuse syndrome (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129696000",
+        "display": "At risk for latex allergy response (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129697009",
+        "display": "At risk for psychosocial dysfunction (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129698004",
+        "display": "At risk for loneliness (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129699007",
+        "display": "At risk for impaired parent / infant / child attachment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129700008",
+        "display": "At risk for caregiver role strain (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129701007",
+        "display": "At risk for spiritual distress (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129702000",
+        "display": "At risk for peripheral neurovascular dysfunction (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129703005",
+        "display": "At risk for perioperative positioning injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129704004",
+        "display": "At risk for delayed development (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129705003",
+        "display": "At risk for disproportionate growth (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129706002",
+        "display": "At risk for disorganized infant behavior (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129707006",
+        "display": "At risk for other-directed violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129708001",
+        "display": "At risk for self-mutilation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129709009",
+        "display": "At risk for self-directed violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129710004",
+        "display": "At risk for post-trauma syndrome (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129711000",
+        "display": "At risk for relocation stress syndrome (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129713002",
+        "display": "At risk for powerlessness (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129838004",
+        "display": "At risk for situational low self-esteem (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129840009",
+        "display": "At risk for physiological dysfunction (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129841008",
+        "display": "Finding related to environmental risk factor (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129849005",
+        "display": "At risk for excess fluid volume (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "129850005",
+        "display": "At risk for negative response to medication (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "130983001",
+        "display": "At risk for autonomic dysreflexia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "15629641000119107",
+        "display": "Systolic heart failure stage B due to ischemic cardiomyopathy (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "1591000124100",
+        "display": "At risk for readmission to hospital (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "160877008",
+        "display": "Child at risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "160887007",
+        "display": "Child on protection register (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161050007",
+        "display": "At risk accident in home (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161051006",
+        "display": "At risk violence in the home (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161052004",
+        "display": "At risk hypothermia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161639008",
+        "display": "At risk of heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161640005",
+        "display": "High risk of heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "161641009",
+        "display": "At risk of diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "16434071000119108",
+        "display": "At increased risk of cardiovascular disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169580009",
+        "display": "Antenatal care: recurrent aborter (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169581008",
+        "display": "Antenatal care: grand multiparity (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169592009",
+        "display": "Antenatal care: poor home conditions (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169593004",
+        "display": "Antenatal care: poor antenatal attender (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169594005",
+        "display": "Late onset antenatal care (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169936002",
+        "display": "Risk factor - been on special care baby unit (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169943008",
+        "display": "Mother less than 20 years old (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169944002",
+        "display": "Mother has a social worker (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169948004",
+        "display": "High risk infant (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "169950007",
+        "display": "One of triplets (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "186378005",
+        "display": "Obstetrical tetanus (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "199312002",
+        "display": "Finding related to risk factor in pregnancy (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "224354005",
+        "display": "Child on at risk register (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "22541000175109",
+        "display": "At increased risk of language barrier (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225444004",
+        "display": "At risk for suicide (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225915006",
+        "display": "At risk of abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225930002",
+        "display": "At risk of choking (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225931003",
+        "display": "At risk of epileptic fits (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225933000",
+        "display": "At risk from fire (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225934006",
+        "display": "Smokes in bed (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225935007",
+        "display": "Hides lit cigarettes in pockets (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225936008",
+        "display": "Drops unextinguished cigarettes (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225937004",
+        "display": "Drops unextinguished matches (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225938009",
+        "display": "At risk of being scalded (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225939001",
+        "display": "Likely to spill hot drinks (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225943002",
+        "display": "At risk of cross-infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225956009",
+        "display": "At risk of urinary tract infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225999004",
+        "display": "At risk of deep vein thrombosis (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "22761000175104",
+        "display": "At increased risk for social isolation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "22791000175108",
+        "display": "At increased risk of intimate partner violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "255598000",
+        "display": "Head of femur at risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "268478005",
+        "display": "One of twins (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "276601004",
+        "display": "Fetus at risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "288850009",
+        "display": "Risk situation requiring placement on supervision register (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "301772008",
+        "display": "Risk of subacute bacterial endocarditis (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "309247009",
+        "display": "Foot at risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "313423004",
+        "display": "At risk of osteoporosis (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "313424005",
+        "display": "At risk of disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "314018004",
+        "display": "At risk of glaucoma (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "315016007",
+        "display": "At risk of coronary heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "332721351000132106",
+        "display": "At moderate risk for fall (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "38369006",
+        "display": "At risk for cognitive impairment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "391040000",
+        "display": "At risk of osteoporotic fracture (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "391155006",
+        "display": "At risk of harming others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "392562007",
+        "display": "At risk for sudden infant death syndrome (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394685004",
+        "display": "High suicide risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394686003",
+        "display": "Moderate suicide risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394687007",
+        "display": "Low suicide risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394688002",
+        "display": "Low risk of primary heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394689005",
+        "display": "Moderate risk of primary heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "394690001",
+        "display": "High risk of primary heart disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "395112001",
+        "display": "Cardiovascular event risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "39623008",
+        "display": "At risk for poisoning injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401200002",
+        "display": "At risk of chronic obstructive pulmonary disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401206008",
+        "display": "At risk for deliberate self harm (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401232002",
+        "display": "Unknown risk of deliberate self harm (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401233007",
+        "display": "At risk for self neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401234001",
+        "display": "Low risk of self neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401235000",
+        "display": "Moderate risk of self neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "401330008",
+        "display": "High risk of self neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "405785004",
+        "display": "At risk for relapse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "406554000",
+        "display": "Low risk of harm to self (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "406555004",
+        "display": "Low risk of harm to others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "406556003",
+        "display": "High risk of harm to others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "407560009",
+        "display": "At risk of sexually transmitted infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "408863003",
+        "display": "At risk for acute ischemic cardiac event (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "408890007",
+        "display": "At risk for spiritual dysfunction (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "408891006",
+        "display": "At risk for hopelessness (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "408895002",
+        "display": "At risk for impaired religiosity (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409031004",
+        "display": "At risk for perioperative injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409040000",
+        "display": "Finding related to reproductive risk factor (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409041001",
+        "display": "Reproductive risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409042008",
+        "display": "Fertility risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409043003",
+        "display": "Infertility risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409044009",
+        "display": "Contraception risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409045005",
+        "display": "Finding related to perinatal risk factor (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409046006",
+        "display": "Perinatal risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409048007",
+        "display": "Labor risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409049004",
+        "display": "Delivery risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "409050004",
+        "display": "Postpartum risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "413588007",
+        "display": "At risk for dysfunctional grieving (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "413589004",
+        "display": "At risk for surgical fire (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "413590008",
+        "display": "At risk of healthcare associated infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "414382000",
+        "display": "Healthcare Professional at risk (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "416805005",
+        "display": "At risk of variant Creutzfeldt-Jakob disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "416936003",
+        "display": "At risk of physical abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "417051004",
+        "display": "At risk of financial/material mismanagement (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "417361000",
+        "display": "At risk of sexual abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "417427001",
+        "display": "At risk of discriminatory abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "417430008",
+        "display": "Vulnerable adult (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "417716002",
+        "display": "At risk of neglect by others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "41775005",
+        "display": "At risk for impaired home maintenance management (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "423192007",
+        "display": "At risk for acute confusion (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "423245001",
+        "display": "At risk for compromised human dignity (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "423949003",
+        "display": "At risk for environmental contamination (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "424167000",
+        "display": "At risk for unstable blood glucose level (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "42427004",
+        "display": "At risk for suffocation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "425060007",
+        "display": "At risk for impaired liver function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "427026001",
+        "display": "At increased risk of bleeding from aspirin therapy (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "430576002",
+        "display": "At risk for injury due to fall (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "430794006",
+        "display": "At risk for delirium (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "438552009",
+        "display": "At risk for destructive behavior to property (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "439430008",
+        "display": "At low risk for fall (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "440331000124103",
+        "display": "Predicted inadequate energy intake (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "440341000124108",
+        "display": "Predicted excessive energy intake (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "442150004",
+        "display": "At risk of venous thromboembolus due to prolonged immobilization (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "445391000124109",
+        "display": "At risk of drug interaction with food (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "445401000124106",
+        "display": "At risk for breastfeeding difficulty (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "445411000124109",
+        "display": "At risk for excessive intake of multiple nutrients (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "445421000124101",
+        "display": "At risk for inadequate intake of multiple nutrients (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "455201601000132100",
+        "display": "At high risk for fall (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "45704003",
+        "display": "At risk for noncompliance (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "48501009",
+        "display": "Alteration in nutrition: potential for more than body requirements (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "50048006",
+        "display": "At risk for deficient fluid volume (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609386002",
+        "display": "At risk for heart failure (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609387006",
+        "display": "At high risk for heart failure (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609388001",
+        "display": "High risk of heart failure, stage A (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609389009",
+        "display": "High risk of heart failure, stage B (disorder)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609399004",
+        "display": "At risk for dental caries (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609400006",
+        "display": "At low risk for dental caries (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609401005",
+        "display": "At moderate risk for dental caries (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609402003",
+        "display": "At high risk for dental caries (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609403008",
+        "display": "At extreme risk for dental caries (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609555007",
+        "display": "Diastolic heart failure stage A (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "609556008",
+        "display": "Systolic heart failure stage A (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "65108000",
+        "display": "At risk for violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698463001",
+        "display": "At risk of chronic kidney disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698464007",
+        "display": "At risk of dementia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698465008",
+        "display": "At risk of endocarditis (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698466009",
+        "display": "At risk of graft-versus-host disease associated with transfusion (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698467000",
+        "display": "At risk of lymphedema (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698867009",
+        "display": "At risk for perioperative fluid shift (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "698868004",
+        "display": "At risk for surgical blood loss (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "699035003",
+        "display": "At low risk of venous thromboembolism (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "700360000",
+        "display": "Predicted excessive nutrient intake (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "700361001",
+        "display": "Predicted inadequate nutrient intake (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "702479006",
+        "display": "At high risk of sexually transmitted infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "702480009",
+        "display": "At low risk of sexually transmitted infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "702532009",
+        "display": "At low risk of harm from others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "702533004",
+        "display": "Low risk environment for patient discharge (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704294006",
+        "display": "At risk for depressed mood during postpartum period (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704295007",
+        "display": "At risk for depressed mood (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704296008",
+        "display": "At risk of impaired respiratory system function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704297004",
+        "display": "At risk of impaired nervous system function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704298009",
+        "display": "At risk of impaired cardiac function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704306003",
+        "display": "At risk of bradycardia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704307007",
+        "display": "At risk of complication of stoma (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704348005",
+        "display": "At risk of hemorrhage (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704349002",
+        "display": "At risk of elder abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704350002",
+        "display": "At risk of impaired child development (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704351003",
+        "display": "At risk of impaired family coping (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704352005",
+        "display": "At risk of delayed growth (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704353000",
+        "display": "At risk of environmental injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704354006",
+        "display": "At risk of anaphylaxis (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704355007",
+        "display": "At risk of impaired caregiver child attachment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704356008",
+        "display": "At risk of health care associated complication (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704357004",
+        "display": "At risk of self-injurious behavior (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704358009",
+        "display": "At risk of nutritional deficit (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704359001",
+        "display": "At risk of polypharmacy (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704360006",
+        "display": "At risk for infection of eye (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704361005",
+        "display": "At risk of deficient food intake (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704362003",
+        "display": "At risk of hyperthermia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704363008",
+        "display": "At risk of impaired infant development (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704364002",
+        "display": "At risk of ineffective tissue perfusion (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704365001",
+        "display": "At risk of dissatisfaction with healthcare (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704367009",
+        "display": "At risk of conflict between religious belief and healthcare recommendation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704368004",
+        "display": "At risk of elopement from healthcare setting (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704413004",
+        "display": "At risk of vomiting (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704414005",
+        "display": "At risk of sleep impairment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704415006",
+        "display": "At risk of impaired school performance (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704416007",
+        "display": "At risk of negative response to patient controlled analgesia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704417003",
+        "display": "At risk of medication side effect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704418008",
+        "display": "At risk of infection of oral mucous membrane (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704419000",
+        "display": "At risk of diarrhea (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704421005",
+        "display": "At risk of coping impairment (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704422003",
+        "display": "At risk of apnea (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704658004",
+        "display": "Child at risk of neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704659007",
+        "display": "Child at risk of abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704674009",
+        "display": "At risk of dysfunctional family grieving (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704676006",
+        "display": "At risk of negative response to nurse controlled analgesia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704681002",
+        "display": "At risk of negative quality of life (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "704682009",
+        "display": "At risk of transfer injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "705089007",
+        "display": "At risk of breast cancer (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "705131003",
+        "display": "Child at risk for overweight body mass index greater than 85 percentile (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "706874009",
+        "display": "At risk of elder neglect (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "706880001",
+        "display": "At risk of confusion (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "706892001",
+        "display": "At risk of intimate partner abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "70693003",
+        "display": "At risk for impaired skin integrity (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "707085002",
+        "display": "At high risk of tuberculosis infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "707087005",
+        "display": "At risk of domestic violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "707856007",
+        "display": "At low risk for Ebola virus disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "707858008",
+        "display": "At high risk for Ebola virus disease (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "709051008",
+        "display": "At risk of malignancy (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "711293008",
+        "display": "At moderate risk of venous thromboembolism (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "711328005",
+        "display": "At high risk of venous thromboembolism (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "711433008",
+        "display": "Apparent life-threatening event in infant (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "711536002",
+        "display": "High risk of bleeding (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "713142003",
+        "display": "At risk from passive smoking (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "713201008",
+        "display": "At risk of female genital mutilation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714657003",
+        "display": "At risk of radiation injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714658008",
+        "display": "At risk of radiation exposure (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714659000",
+        "display": "At risk of impaired urinary system function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714660005",
+        "display": "At risk of impaired psychological state (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714661009",
+        "display": "At risk of impaired gastrointestinal system function (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714662002",
+        "display": "At risk of impaired fetal development (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714663007",
+        "display": "At risk of impaired ability to perform caretaking (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714664001",
+        "display": "At risk of ulcer of foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "714665000",
+        "display": "At risk of adverse drug interaction (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "715238005",
+        "display": "At risk of electrolyte imbalance (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "716363001",
+        "display": "At risk of fracture of tooth (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "716565009",
+        "display": "At risk of child sexual exploitation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "718586000",
+        "display": "At risk for perioperative thermal injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "719008003",
+        "display": "At risk of atrial fibrillation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "719077007",
+        "display": "At high risk of atrial fibrillation (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "720975008",
+        "display": "Brief resolved unexplained event (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "720988006",
+        "display": "At risk of shock (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "736523005",
+        "display": "At risk of complication of anesthesia (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "736792008",
+        "display": "At risk of honor based violence (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "766969008",
+        "display": "At risk of radicalization (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "771983008",
+        "display": "At risk of psychological abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "771984002",
+        "display": "At risk of emotional abuse (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "772132005",
+        "display": "Moderate risk of harm to others (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "78648007",
+        "display": "At risk for infection (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "80601004",
+        "display": "At risk for activity intolerance (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "81763001",
+        "display": "At risk for injury (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "822952005",
+        "display": "At increased risk of emergency hospital admission (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "830217008",
+        "display": "At increased risk for literacy concern (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "830225005",
+        "display": "At increased risk for stress (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "8317005",
+        "display": "At risk for deficient parenting (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "840301002",
+        "display": "At increased risk for allergy response (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863879002",
+        "display": "At low risk of ulcer of right foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863880004",
+        "display": "At low risk of ulcer of left foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863881000",
+        "display": "At moderate risk of ulcer of left foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863882007",
+        "display": "At risk of ulcer of left foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863883002",
+        "display": "At risk of ulcer of right foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863884008",
+        "display": "At high risk of ulcer of right foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863885009",
+        "display": "At moderate risk of ulcer of right foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "863886005",
+        "display": "At high risk of ulcer of left foot due to diabetes mellitus (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "866240007",
+        "display": "At risk of cerebrovascular accident (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "866242004",
+        "display": "At increased risk of malignant neoplasm of breast (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "866243009",
+        "display": "At risk of hereditary cancer-predisposing syndrome (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "870577009",
+        "display": "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "87502001",
+        "display": "At risk for imbalanced body temperature (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "879970005",
+        "display": "At risk for medication error (finding)"
+      }
+    ]
+  }
+}

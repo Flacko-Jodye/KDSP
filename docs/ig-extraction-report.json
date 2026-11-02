@@ -1,0 +1,2371 @@
+{
+  "stats": {
+    "elements": 7902,
+    "profiles": 110,
+    "sections": 40,
+    "maxDepth": 12
+  },
+  "warnings": [
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Application_Status.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Consent_Description.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Consent_File_Location.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Insertion_Date_Fecal_Urinary_Drainage.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Interpreter_Required.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Notes_For_Communication.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Consent.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Contact_Person.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_DeviceUseStatement.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Has_Member.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Reason_Cause.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Receiving_Institution.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Recommendation_Continuation_Measure.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Recommendation_Receiving_Institution.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Religion.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Removal_Date_Fecal_Urinary_Drainage.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Status_Care_Level.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Terminologie_Assoziation.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Timetable.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Extension",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_AllergyIntolerance.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Allergy_Intolerance|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Bundle.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Bundle",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/CarePlan",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_CareTeam.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_CareTeam|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Composition.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Composition",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Condition_Care_Problem.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Condition",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Diagnosis|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Consent_Statement.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Consent",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Aid.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Device",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Implant.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Device",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Other_Item.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Device",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Device|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DeviceDefinition.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_DeviceDefinition|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DeviceUseStatement.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/DocumentReference",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Encounter_Current_Location.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Encounter",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Encounter_Hospital_Stay.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Encounter",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Goal_Treatment_Goal.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Treatment_Goal|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Identifier",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Medication.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Medication|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_MedicationStatement|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Assessment_Free.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bathing.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Dressing.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Feeding.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Grooming.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Mobility.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Toileting.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Transfer.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Blood_Pressure.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Blood_Pressure|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Height.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Height|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Temperature.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Temperature|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Weight.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Weight|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Care_By_Relatives.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Care_Level.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Comment.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Copayment_Exemption.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Fecal_Drainage.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Food_Administration_Form.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Food_Type.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Glucose_Concentration.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Glucose_Concentration|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Health_Insurance_Card_Given.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Heart_Rate.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Heart_Rate|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Information_Legal_Care.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Information_Medicines.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Isolation_Necessary.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Last_Bowel_Movement.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Last_Micturition.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Nutrition.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Orientation.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Pain.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Peripheral_Oxygen_Saturation|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Personal_Statements.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Allergies.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Problems.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Risks.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Relatives_Notified.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Access.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Rate.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Respiratory_Rate|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Support.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Risk.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Striking_Behavior.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Total_Barthel_Index.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Urinary_Drainage.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Wish.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Observation",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Organization_Manufacturer.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Organization.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Practitioner.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_PractitionerRole.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_PractitionerRole|1.3.0",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Procedure_Isolation.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Procedure",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Procedure_Nursing_Measures.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Procedure",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Provenance_Source_of_Information.xml.json: Differential ohne aufgelöste Basis http://hl7.org/fhir/StructureDefinition/Provenance",
+    "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person.xml.json: Differential ohne aufgelöste Basis https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_RelatedPerson|1.3.0"
+  ],
+  "unresolved": [
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_File_Location#Extension.value[x]:valueAddress",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Street_Address|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable#Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Event_Timing|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance#AllergyIntolerance.reaction.exposureRoute.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Route_of_Administration_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam#CareTeam.participant.role.coding:rollePatientenbezug",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care_Team|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Consent_Statement#Consent.scope",
+      "reference": "http://hl7.org/fhir/ValueSet/consent-scope|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device#Device.type.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Device_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10#Identifier.type",
+      "reference": "http://fhir.de/ValueSet/identifier-type-de-basis"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Medication#Medication.form.coding:edqmCode",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Doseform|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction#MedicationStatement.statusReason",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Drug_Therapy_Status_Codes_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction#MedicationStatement.dosage.route.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Route_of_Administration_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction#MedicationStatement.dosage.route.coding:edqmCode",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Route_Of_Administration|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Body_Height_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Body_Temperature_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Body_Weight_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight#Observation.method.coding:Datenerhebung",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Body_Weight_Method_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability#Observation.component:merkzeichen.code",
+      "reference": "http://fhir.de/ValueSet/merkzeichen-de|1.3.2"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration#Observation.code.coding:loinc",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_LOINC|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration#Observation.interpretation.coding",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_Interpretation|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration#Observation.method.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_Method_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Heart_Rate_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate#Observation.code.coding:codeSnomed",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Respiratory_Rate_SNOMED_CT|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization_Manufacturer#Organization.extension:ergaenzende_Angaben",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.meta.profile",
+      "reference": "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.meta.security",
+      "reference": "http://hl7.org/fhir/ValueSet/security-labels"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.meta.tag",
+      "reference": "http://hl7.org/fhir/ValueSet/common-tags"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.language",
+      "reference": "http://hl7.org/fhir/ValueSet/languages"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.text.status",
+      "reference": "http://hl7.org/fhir/ValueSet/narrative-status|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:pid",
+      "reference": "http://fhir.de/StructureDefinition/identifier-pid|1.3.2"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:pid.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:pid.type",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:pid.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_GKV",
+      "reference": "http://fhir.de/StructureDefinition/identifier-kvid-10|1.3.2"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_GKV.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_GKV.type",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_GKV.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv",
+      "reference": "http://fhir.de/StructureDefinition/identifier-pkv|1.3.2"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv.type",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv.assigner.type",
+      "reference": "http://hl7.org/fhir/ValueSet/resource-types"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_pkv.assigner.identifier",
+      "reference": "http://fhir.de/StructureDefinition/identifier-iknr"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:reisepassnummer",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Identifier_Reisepassnummer|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:reisepassnummer.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:reisepassnummer.type",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:reisepassnummer.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_kvk",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Identifier_KVK|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_kvk.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_kvk.type",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-type"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertennummer_kvk.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_PKV.use",
+      "reference": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_PKV.type",
+      "reference": "http://fhir.de/ValueSet/identifier-type-de-basis"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.identifier:versichertenId_PKV.assigner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Name|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.use",
+      "reference": "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.family.extension:namenszusatz",
+      "reference": "http://fhir.de/StructureDefinition/humanname-namenszusatz"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.family.extension:nachname",
+      "reference": "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.family.extension:vorsatzwort",
+      "reference": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.prefix.extension:prefix-qualifier",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.prefix.extension:prefix-qualifier.value[x]",
+      "reference": "http://hl7.org/fhir/ValueSet/name-part-qualifier|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:name.prefix.extension:prefix-qualifier.value[x]:valueCode",
+      "reference": "http://hl7.org/fhir/ValueSet/name-part-qualifier|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Maiden_Name|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.use",
+      "reference": "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.family.extension:namenszusatz",
+      "reference": "http://fhir.de/StructureDefinition/humanname-namenszusatz"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.family.extension:nachname",
+      "reference": "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.family.extension:vorsatzwort",
+      "reference": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.prefix.extension:prefix-qualifier",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.prefix.extension:prefix-qualifier.value[x]",
+      "reference": "http://hl7.org/fhir/ValueSet/name-part-qualifier|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.name:geburtsname.prefix.extension:prefix-qualifier.value[x]:valueCode",
+      "reference": "http://hl7.org/fhir/ValueSet/name-part-qualifier|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.telecom",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Contactpoint|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.telecom.system",
+      "reference": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.telecom.use",
+      "reference": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.gender",
+      "reference": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.gender.extension:other-amtlich",
+      "reference": "http://fhir.de/StructureDefinition/gender-amtlich-de|1.3.2"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.gender.extension:other-amtlich.value[x]",
+      "reference": "http://fhir.de/ValueSet/gender-other-de"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.gender.extension:other-amtlich.value[x]:valueCoding",
+      "reference": "http://fhir.de/ValueSet/gender-other-de"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.birthDate.extension:data-absent-reason",
+      "reference": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.birthDate.extension:data-absent-reason.value[x]",
+      "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.birthDate.extension:data-absent-reason.value[x]:valueCode",
+      "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Street_Address|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.extension:Stadtteil",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.use",
+      "reference": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.type",
+      "reference": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.line.extension:Strasse",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.line.extension:Hausnummer",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.line.extension:Adresszusatz",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.line.extension:Postfach",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.state",
+      "reference": "http://fhir.de/ValueSet/iso/bundeslaender"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Strassenanschrift.country",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach",
+      "reference": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Datatype_Post_Office_Box|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.extension:Stadtteil",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.use",
+      "reference": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.type",
+      "reference": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.line.extension:Strasse",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.line.extension:Hausnummer",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.line.extension:Adresszusatz",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.line.extension:Postfach",
+      "reference": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.state",
+      "reference": "http://fhir.de/ValueSet/iso/bundeslaender"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.address:Postfach.country",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.maritalStatus",
+      "reference": "http://hl7.org/fhir/ValueSet/marital-status"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.relationship",
+      "reference": "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.address.use",
+      "reference": "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.address.type",
+      "reference": "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.address.country",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.gender",
+      "reference": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.contact.organization",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.communication",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.communication.language",
+      "reference": "http://hl7.org/fhir/ValueSet/languages"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.generalPractitioner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.generalPractitioner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.generalPractitioner",
+      "reference": "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.managingOrganization",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Organization"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.link.other",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Patient"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.link.other",
+      "reference": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient#Patient.link.type",
+      "reference": "http://hl7.org/fhir/ValueSet/link-type|4.0.1"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner#Practitioner.qualification.code",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole#PractitionerRole.code.coding:RolleDerEinrichtung",
+      "reference": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Rolecare|1.3.0"
+    },
+    {
+      "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information#Provenance.agent.who.extension:data-absent-reason",
+      "reference": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+    }
+  ],
+  "inventory": [
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Application_Status.xml.json",
+      "sha256": "396df112c9cb790ed03af273d61d8e57d3feba1365b55e5d533e747d085182c2",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Application_Status",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Consent_Description.xml.json",
+      "sha256": "bdd5cf1785a2c5a35e18d4f944a175ccd3b377ce1530b1060ea569d827ae2dd0",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_Description",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Consent_File_Location.xml.json",
+      "sha256": "d28944424490eceeeca0970aa8aecf690f77cc3ce4b62bf4c19c1e46a8f56245",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Consent_File_Location",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Insertion_Date_Fecal_Urinary_Drainage.xml.json",
+      "sha256": "243849bb6608ac58658aeb12b3f30da345cf7d95763b0d620fe1e142dffe8f28",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Insertion_Date_Fecal_Urinary_Drainage",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Interpreter_Required.xml.json",
+      "sha256": "a31505f3665e116ea13ec9934a05e3c84d57940071ca8f74ad65f59741045e34",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Interpreter_Required",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Notes_For_Communication.xml.json",
+      "sha256": "9683b57e91fb8df58e691e83b536a5058a2458689d5450ae5cfa89e65ef9867a",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Notes_For_Communication",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Consent.xml.json",
+      "sha256": "7223ed4e050a206050de26dc840a39cea6296450b3641e470a371201ccd675a1",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Consent",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Contact_Person.xml.json",
+      "sha256": "fdb25b27a1f53dad32dcb923912b68a31f9b1eda51d3ae20c4f374a135b9422c",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Contact_Person",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_DeviceUseStatement.xml.json",
+      "sha256": "2643cc4d30d7d21871087681a1db1f2a7870cdc548919a8d701afabb892e36ed",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_DeviceUseStatement",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Has_Member.xml.json",
+      "sha256": "c7873528d91519bea41bcfceca8c82a681fd6691352714179d2f7429e0db3a3a",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Reason_Cause.xml.json",
+      "sha256": "5b0f9da6c3f48edd6515c52758339b17bb44b92d5795e9077ecd33fdbb2b7241",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Receiving_Institution.xml.json",
+      "sha256": "3eee02ba68fefa2a212b1b7ff842a5b0b3241f44d9ffd1027102782f04de8eb9",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Receiving_Institution",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Recommendation_Continuation_Measure.xml.json",
+      "sha256": "a49be35e22891472f4b73e662921716c10f2e709b6584adcf30db063e42b8c1b",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Continuation_Measure",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Reference_Recommendation_Receiving_Institution.xml.json",
+      "sha256": "930a857f5869bd9d794f3d2a4789df5b5d5b2f567e7f570ddbfb96aa40095ad9",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Receiving_Institution",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Religion.xml.json",
+      "sha256": "4315165b0b8eb90cca4171844ef2afb0f3c2600442b90e8e51b3575f5d20eaef",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Religion",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Removal_Date_Fecal_Urinary_Drainage.xml.json",
+      "sha256": "3418b5bd85f402c00a0fea0d284c6db90617b7b53d952da15d5a040f8c181e4c",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Removal_Date_Fecal_Urinary_Drainage",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Status_Care_Level.xml.json",
+      "sha256": "a919fdb0beb0adfc0dbb6b1089162ab12b319994c4338f267ba7abffbfa63cdb",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Status_Care_Level",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Terminologie_Assoziation.xml.json",
+      "sha256": "2d5f097b9188188d757edba147980655e3bdaec268879faa1d04e07a10e6de7c",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Terminologie_Assoziation",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_EX_MIO_ULB_Timetable.xml.json",
+      "sha256": "10bbff9fa3027bc73a72d8e080f7e039b25b8ddf3dc93de23bc0b4d15edd6ee3",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_AllergyIntolerance.xml.json",
+      "sha256": "43301d9ffea596a30664e037e607bff9014b763a7d2c24180d3e471baa4e89fa",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Bundle.xml.json",
+      "sha256": "f2ef5193cbd2c34c9b1080b2a8d11f4f3573ca3dd265fe5800c4f3eb0c93547b",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution.xml.json",
+      "sha256": "ca019fccd788b5bc370cdebb860fcb915f54184e441e8de786f4a16b0cdf7382",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_CareTeam.xml.json",
+      "sha256": "05064c43592f1f8a322c169948fb158e13e5320342749b1ecff518ab8632d3e4",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel.xml.json",
+      "sha256": "6032a8bf96a8df8c450fed771cef84e3165301fc89cd16c2e9acab8a734fac02",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_ClinicalImpression_Individual_Functions_Barthel",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Composition.xml.json",
+      "sha256": "9c6fa8aa2c4d76d96e2126ffa55da26accda8ac6a336924dded0f3c2c0eb0ec4",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Condition_Care_Problem.xml.json",
+      "sha256": "bb2c4e1718496085ce4bb7a2d63c2f4f221b6a3abcb557c76ae087a57a7c77ea",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis.xml.json",
+      "sha256": "8a468f737040b275d5c7777f2524ac7b41d3d3535b023f03bd13d4ef52cbed86",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Consent_Statement.xml.json",
+      "sha256": "f1f9681db566cc0d6a8a28abae029cf99c34730c51aadfb4ff3e005d5449db56",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Consent_Statement",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Aid.xml.json",
+      "sha256": "ae8207e3678d7227ec0cddfdaaf9ec70aae0539733886aa09a12ae497a424951",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Implant.xml.json",
+      "sha256": "6e64042d5296da8ebab2b9865de5ed25b0197d607189b72ca6156332a9aba9c3",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device_Other_Item.xml.json",
+      "sha256": "f483e9a06d344315995013a56826aa6ec43435488e42f5668b45d52cf71b641e",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Other_Item",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Device.xml.json",
+      "sha256": "a2b597733307adadf335d71ad1e4c21e7f8ce2626f80f709d0dec3b9827f926b",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DeviceDefinition.xml.json",
+      "sha256": "69929bff549c6eecf13245a4c288218e65acf48fb88655866e962551535f71c5",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DeviceDefinition",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DeviceUseStatement.xml.json",
+      "sha256": "a7f881e60d890267bd9537025e99aeabff398f0a7c2fbeb4c872ae44b6aa6ff3",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DeviceUseStatement",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures.xml.json",
+      "sha256": "3e1918ee45e11442d1d40b6dea1f20bbdea87d7e7c951dde7569cfe1870b6a7d",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference.xml.json",
+      "sha256": "48b17e3a8b00586049ab393daa9213031f233cda5e03d027453885eb53602da7",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Encounter_Current_Location.xml.json",
+      "sha256": "2476ee4d1acda841da374a23a20c3883e0d4759d60f8cb19d95ea3cab5f4eb47",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Current_Location",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Encounter_Hospital_Stay.xml.json",
+      "sha256": "3ba322094d2fab7dc0884101f1aaf380908fef930122abf464c3bdb9a352ec7a",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Hospital_Stay",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Goal_Treatment_Goal.xml.json",
+      "sha256": "8b2df42c3cc63a372dc7158d1ba6ac0de3e7239a0648d105a8cfa348055c6e07",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Goal_Treatment_Goal",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10.xml.json",
+      "sha256": "8a0a58865e758f874a1c32ef7a37f5de37332f314d4684d18ee9931070986892",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Identifier_PKV_KVID_10",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Medication.xml.json",
+      "sha256": "f69de073e635a2699bd793de63267bde815a2cb54f91f34476793e26c465300a",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Medication",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction.xml.json",
+      "sha256": "715f2172fbcda646923b08346891f73a9cb36bc9cbb732a845d635cc36ffd19e",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Assessment_Free.xml.json",
+      "sha256": "1031394a592f8de827bcb06ec8d01fad6d792368482c77800d46ad51c89795fe",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bathing.xml.json",
+      "sha256": "cf939b0b5c3f9a87bbbf6836a5fb3d3e789551096ae0f12bd1ba76437d6c2bba",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bathing",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control.xml.json",
+      "sha256": "2e073ca38f08d29fad0f72834c6576d2e8acacdbf82d218388187d36d4c6be5f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bladder_Control",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control.xml.json",
+      "sha256": "13a6ae5547922d779cdfa3c74117827d69e970d7c53ec3ff2a5fcd7ea47ef359",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Bowel_Control",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs.xml.json",
+      "sha256": "d9310495cfa29ce1136485c5946184294c272fa60c0d14a65393e809c2737314",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Climbing_Stairs",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Dressing.xml.json",
+      "sha256": "2b3fb98019d2bfc1a93173559058ba7ee0de5256e4cd14906dfa1fcaa49fce42",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Dressing",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Feeding.xml.json",
+      "sha256": "251369643cb38cde24af0ef1d3da2cbc30ef3f83db2750a7ec537f28cfe529e7",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Feeding",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Grooming.xml.json",
+      "sha256": "06113d27af9ededf0d0ff2704c47db07423daa92cbc8545444342d99ac72486e",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Grooming",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Mobility.xml.json",
+      "sha256": "3c4ff7556551b483ac51680795df6e2fcb9a7ad74e574747b5bf876474f1c866",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Mobility",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Toileting.xml.json",
+      "sha256": "e3cc4c7a260b0991594dd894c9e0a75b22a2a00badfa4219abdc06a3fd029ad4",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Toileting",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Barthel_Transfer.xml.json",
+      "sha256": "ec801fc7cfc316a1a04db9707df65d4f6ba0d9dddec17ecded2b2d6f8bfe7343",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Barthel_Transfer",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Blood_Pressure.xml.json",
+      "sha256": "229f2b2bfd30c263d24a892f3fafd9ad9f43abf3846b7c4d928e17f01e416bd0",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Height.xml.json",
+      "sha256": "2b9b6cc899ec5f9ac9a106f4ee3e9fa729084fe2597241a325300903f8f4734a",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Temperature.xml.json",
+      "sha256": "be9c53764a2ccbd9b102080d79f2fa4c7af435d24976e18f04bc6b7f3277a964",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Body_Weight.xml.json",
+      "sha256": "626ac7f8a97f9a868f0de2523d4c32c577adfec9960fd8e39b2339054dd21225",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Care_By_Relatives.xml.json",
+      "sha256": "5d37ada74656ab294924546fc65632d491928eb727c43f6e6f486e5c21fb1bf3",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_By_Relatives",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Care_Level.xml.json",
+      "sha256": "eea5d75431763853388588d6452e09fd1177963c26566a170e9853f6e15b14ab",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness.xml.json",
+      "sha256": "57e5a8f044d881000640345083488227a46344a421b06b5e7061215560e8c73b",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Comment.xml.json",
+      "sha256": "8c053c29ca5be77b5a1e58254760abef81cf18aae75fee55489baa75586dbbfd",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Comment",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Copayment_Exemption.xml.json",
+      "sha256": "03e43beadbbd9d049ee9906e9e988af0664e96bd6d8293ff9ef21b0dfac49341",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Copayment_Exemption",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available.xml.json",
+      "sha256": "8da35429ef4a593d340034e965c58b14ad05c9966048d3a0b3c853066dabace6",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability.xml.json",
+      "sha256": "5f6b6938375f9c8d6d65258500760ad9d942cae9348611e00b454d86a73e88bc",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures.xml.json",
+      "sha256": "ae4ff898176c2850f9f333e51d7adb760cf0dbb2650786238fddcaf82f82c113",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months.xml.json",
+      "sha256": "95db68171e45bb546b11c548c365b4c733eaf6ac69a11bfb0df9280c3f804228",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment.xml.json",
+      "sha256": "909b7bbd6acd110b02db51fbd8f8c173ff297869e99f7e45f68696928c110894",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Fecal_Drainage.xml.json",
+      "sha256": "26939dd402690f1776acaef70f91845d4abb3f586e0497e870df0112fdce1df2",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Food_Administration_Form.xml.json",
+      "sha256": "7465e2942f5b53c9a31d5cae51c095dd1035bb16392d79de88ee7c11ed3d18db",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Administration_Form",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Food_Type.xml.json",
+      "sha256": "f2ffd04eee0175eace646dbea87bf0eedaa795d086d2c5e0319b1ae6f17c952f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Glucose_Concentration.xml.json",
+      "sha256": "9bcd3c54510fabf78b2df950f895d50d90e732c0df35b191ef159b513048df6d",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Health_Insurance_Card_Given.xml.json",
+      "sha256": "c6d67c4afee9bd4fee69b7ddc9aea489790dcc2ff0077b16cbd350679684f071",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Health_Insurance_Card_Given",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Heart_Rate.xml.json",
+      "sha256": "f67454e58bde532e16023187012ecc403a3d8a9264962b6b3e67c621d42b45be",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Information_Legal_Care.xml.json",
+      "sha256": "2d777a9f21841ab5f5cbe3c45d7a0c164a3004add8ab27981d315806a1e86252",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Legal_Care",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Information_Medicines.xml.json",
+      "sha256": "c8ba0112c62e8bde501b75d9b67ad3616b6e9ebeccff6b1c0c8af717bf50957f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Medicines",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Isolation_Necessary.xml.json",
+      "sha256": "4af5d9817a90f38ac60e4bb03da66bad513617d55b5e69469da2e8d63b73ebe0",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Isolation_Necessary",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Last_Bowel_Movement.xml.json",
+      "sha256": "0ac9fc6967082e9c9df006020e7923ad29d571a739330d32fe83c64471e612a9",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Bowel_Movement",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Last_Micturition.xml.json",
+      "sha256": "972ce6b0d3b469c34ba2ca078022321c4c8b4f4db0a9ae8d76505a3ffb50af08",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Micturition",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution.xml.json",
+      "sha256": "5857f3d35e867447490d588fec8784910871ac01b9fcc32da910cbde0fd1571f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Nutrition.xml.json",
+      "sha256": "3f4850db86b49bdca8a4139b00c2041c8a9cffa6ce5d75172c29396c1587c3ec",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Nutrition",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Orientation.xml.json",
+      "sha256": "1eb254badaf90ee865faa7e994ec4558d909cea7a40970af5732c96c2b26ca9e",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Pain.xml.json",
+      "sha256": "96546d026f653e5e3ca359fa506e3073191c5aa817d42aa134d9b14fb2abfffb",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation.xml.json",
+      "sha256": "97cd716d740d9a3b1d090aae9d71f20c5bebd5b11e978e125f4d308e2d210e1e",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Personal_Statements.xml.json",
+      "sha256": "5373629dd39f4867478ad55289006f9f9155ac26302dd138f9d3e9b6594e3035",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Personal_Statements",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Allergies.xml.json",
+      "sha256": "464ec4b15e152fab2d510bda23e9fc433df8fb9527483abb153dfc27a28d4ae9",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Allergies",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment.xml.json",
+      "sha256": "46a696dd5106c835017c43307c443ef4e5976a6e68d0dce52b9d69722ec5f1f1",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition.xml.json",
+      "sha256": "c66f8cf6803097dd9b873fe71ed42c4e3721072f03fdebe7872a010f53f3791f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Problems.xml.json",
+      "sha256": "f1cc455c509490091b903ff8525efbe0fa30d69123346a822d6a593004b21200",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Problems",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Presence_Risks.xml.json",
+      "sha256": "3711a25c9c1c8f3d988ad6e4f19a05b794ffc1126da0391a05747f9b8ac7c338",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Risks",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing.xml.json",
+      "sha256": "86ac7f00f9439baf01ee6db459eeded980d7d9e9b0507173c24c3338c506b990",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Relatives_Notified.xml.json",
+      "sha256": "c2acacc8dd3613e339c1437c9446a0656df7595aac6cc8a67e8f25b2820961ab",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relatives_Notified",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices.xml.json",
+      "sha256": "484cf19d98281127fa37d720ae705273031c0a9fc49653d4887a1896461d143d",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Access.xml.json",
+      "sha256": "f684f149ce38889910f250e7486a72db9f0d30c6f62429c41f25a09a7d8626ec",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Rate.xml.json",
+      "sha256": "94d2fecb34d7547824e45c2c2a34edd27026eab5c88e875e90e5fe86fd57c25f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Respiratory_Support.xml.json",
+      "sha256": "f49ba463ff50ffc2caa3ba3364d4d3ad788342ceb6172ca0ff398de2d756afab",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Risk.xml.json",
+      "sha256": "cdfce2c46365abbfc898530614b32ab6b165864c40f5b094e6f51aface144836",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Striking_Behavior.xml.json",
+      "sha256": "46c66d082f14c3505528b24a07dd94659a98400909ffb41e57a240bfdfdcfcaf",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Total_Barthel_Index.xml.json",
+      "sha256": "93c5f28a20c3f8b10571d2c892cb4776f3d581cf9c45e1a163ca08814154e8da",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Total_Barthel_Index",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment.xml.json",
+      "sha256": "e13b672c1bd00be3ef87a777928cacbd090801f1ba8c7cac81ea858dc8d8640f",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Urinary_Drainage.xml.json",
+      "sha256": "ea9eb65d89bbf9b2588cb6b46ac1263ceb1702b249b5c1f982aaf874db7675ba",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Observation_Wish.xml.json",
+      "sha256": "593817a3943f2fee0c38abee8ea553b8a9df75cc6492f733170c878076af5cdd",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Organization_Manufacturer.xml.json",
+      "sha256": "d2447983d7b8f86c92214ebf7bf6ee8a93edd4abfda2d8dd01f102e26e6f1d89",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization_Manufacturer",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Organization.xml.json",
+      "sha256": "2e18a5642a6aa030f9ab1d96130dd6133547fbc34ae344386665b9aee46a1ee2",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Patient.xml.json",
+      "sha256": "44aec77ff210def2f3748c9f4ed1c2edd7e89cd0a444b8614f55ba06ea085cc6",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Practitioner.xml.json",
+      "sha256": "e8b26f48475663865d5de32e5b66c862662d0b7c9a5a96eba4293d1916ed676d",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_PractitionerRole.xml.json",
+      "sha256": "cf55cd7a0ad34de9acb01e102b3b19e1bb54c06d7449278b68cea6e465edbf52",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Procedure_Isolation.xml.json",
+      "sha256": "8b68dadf7beef2df0a39d8ee8ad8447e8f01f6ad35253960233056a10bafded6",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Procedure_Nursing_Measures.xml.json",
+      "sha256": "adf381877e486b95f2ea8146ffde4b05e51c5d8c9436229304a2ea0e918b22d8",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_Provenance_Source_of_Information.xml.json",
+      "sha256": "a84ab51d2c28b87003f8a6c73f345ff12590e0a5325e2e910cd95d5cf0193c79",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Profile/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person.xml.json",
+      "sha256": "24d062d693bff746bb9279b13984354c1b8ada78f2daac45ee74a2337729cbd4",
+      "type": "StructureDefinition",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person",
+      "fhirVersion": "4.0.1"
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CM/KBV_CM_MIO_ULB_Overview_German.xml.json",
+      "sha256": "6fe2fa56678675899de27eb6f1d919fccc9e910759c4376a7d7255601e80315b",
+      "type": "ConceptMap",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_ULB_Overview",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Address_Book.xml.json",
+      "sha256": "363fe33a6bdacf550eeca9b75f37fe55404d3db62f2a72148d95a924f1ff9884",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Address_Book",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Advance_Directive_Status_German.xml.json",
+      "sha256": "679ac060327b82a72be595b586346e35be2429c9bf93b6d21004ddeb25cef299",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Advance_Directive_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Allergies_German.xml.json",
+      "sha256": "b3cd72a3aead83a5fb78f9fd85e66cd179e49d69ecb616299e60e46a8da75b2e",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Allergies_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Application_Status_Care_Level.xml.json",
+      "sha256": "878691ec55cb592b8ea5ef5e91369c8bacbfd631548749710f3061aeea953644",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Application_Status_Care_Level",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Bathing_Hamburg_Manual.xml.json",
+      "sha256": "f7feff7cb0d399f25779bac964db03b7de6bd7f033a735b3f9e776d2ffdcc51e",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bathing_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Bladder_Hamburg_Manual.xml.json",
+      "sha256": "0df1ad7faf92d871f8e5c6bab72a604703441a7d7e57cb8ca49b1559c57f4a14",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bladder_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Bowel_Hamburg_Manual.xml.json",
+      "sha256": "296e706f2a832bf607e0361b81eb526ec2398fabc434dbfd800e15accb6ee7eb",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Bowel_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Dressing_Hamburg_Manual.xml.json",
+      "sha256": "455a0b1a6d364673dc36673a112d9ffff53862325a9c7fa11ac72a4e8e05a693",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Dressing_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Feeding_Hamburg_Manual.xml.json",
+      "sha256": "c2923fba01fa25a5f806263c8cd97e01cc6b351c291c73ac6a6756d908ee97e0",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Feeding_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Grooming_Hamburg_Manual.xml.json",
+      "sha256": "bb250dc06bab08218f443a8ccd4a6f0404dd5098dcb202969f93047f4e0cd3a8",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Grooming_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Mobility_Hamburg_Manual.xml.json",
+      "sha256": "45805414cd47f2e625e0ae977025ab457c03d3c6335b59067d920f00f98ffbc3",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Mobility_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Stairs_Hamburg_Manual.xml.json",
+      "sha256": "361fce508580ac7153e0d3bfed31773ffa6dedf2b5566834512f2fd70da2905d",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Stairs_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Toileting_Hamburg_Manual.xml.json",
+      "sha256": "344df6d22bf99735a647072ef24aa6af75fbf8574b8373f0b0881dc2b16a8cbb",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Toileting_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Barthel_Index_Transfer_Hamburg_Manual.xml.json",
+      "sha256": "f69aaf2971f1f9d61a29ba6f43e83a59c6b1d27894521893b5cf4a8206d36464",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Barthel_Index_Transfer_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Bladder_Continence_Status_German.xml.json",
+      "sha256": "f8e7b7608cd0d56d6e6cff4d5c2136c1c302f8fabf4d76a875344dffad4881d0",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bladder_Continence_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Bowel_Continence_Status_German.xml.json",
+      "sha256": "b153109e926bd7e0a83edc845a645a6a7cda6e65a21498f6b8ca7cf96398d47b",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bowel_Continence_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Cognitive_Awareness_German.xml.json",
+      "sha256": "551bd01f1adcd11770962cff77d73acf727e3d92a6f8f861c69d7b9d42196388",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Cognitive_Awareness_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Constraint_Control_Seclusion_German.xml.json",
+      "sha256": "eb95f1a1090e90505334eca00f77529f62b2e5505174fbf1937e949e9d8c42f0",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Constraint_Control_Seclusion_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Current_Location_Status.xml.json",
+      "sha256": "871f7eaee822407375a713c5355da7c67af6c970993f22f566961a66a8a1af30",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Current_Location_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Device_Use_Statement_Status_German.xml.json",
+      "sha256": "4baed0f15ff0250ac3b54ce04433d26a60b203deb8150e2f69eb8e5028650d43",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_KBV_VS_Base_Device_Use_Statement_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Disability_Degree_Presence_Status_German.xml.json",
+      "sha256": "ae4880829813c7e47cad29461904116d99210b351c00f8440cc40dd594553a5d",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_Degree_Presence_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Disability_German.xml.json",
+      "sha256": "6b2c1b736419b371055562a347a86f43010ca4d86273740811226a9b16a24274",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Evacuation_Bladder_Content_German.xml.json",
+      "sha256": "2fde15fac87620d1cb23b87b03b27dc0a2bff25df46be348d7933e345c306f30",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Bladder_Content_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Evacuation_Intestinal_Contents_German.xml.json",
+      "sha256": "2c024f161a2d64d185d272372b95d0c23bc46e2e15d6c0ff3c6c712a02b55495",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Intestinal_Contents_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Facility_Type.xml.json",
+      "sha256": "96da60b8540d0b45cd9f2867bc420d79574e93c9ad8b26b837a304203752c67c",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Facility_Type",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Food_Administration_Form_German.xml.json",
+      "sha256": "80c473c7dd9f8b1d67ce07c97e2352bc87c5fa26dc38ea032f15ff26a551606a",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Administration_Form_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Food_Type_German.xml.json",
+      "sha256": "b8ffb7c8a17897b71a5ab84d54ad3c3a1d6c021cb3deaaf90075635c0e6332a7",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Type_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Health_Care_Proxy_Type_German.xml.json",
+      "sha256": "13c48ba277b20b7a09a7823f23803140efc912a731b5058948c714a97e20060b",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Care_Proxy_Type_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Health_Insurance_Card.xml.json",
+      "sha256": "01a05d33258e9bbd9d981c5409b35a0e23b9e109de4f0788bc704727f754c756",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Insurance_Card",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Identifier_Types.xml.json",
+      "sha256": "cff41e0db424b7c113589a77fe3f20fe77bb8fc75bedd6274f486c13f874d154",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Identifier_Types",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Information_Legal_Guardian_German.xml.json",
+      "sha256": "12d89727c49c45656cc3a72a6ce936d4aff719d2384be3835e87275bcf84f5e8",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Legal_Guardian_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Information_Medication_German.xml.json",
+      "sha256": "454133f831cf99cb5448c11dbcebf526ba33ff1773d2442fd522eb64a408292c",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Medication_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Isolation_Necessity_German.xml.json",
+      "sha256": "da9f8c7bfb14bac52d8653d5793813f0ae296956e798f6015174f987fcdc3a3f",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Necessity_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Isolation_Type_German.xml.json",
+      "sha256": "0bce38bcaba421cf93c2bb21888b57b1f4da7ebbb73a4e245f6e79ba8903c4dc",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Type_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Living_Condition_German.xml.json",
+      "sha256": "e8d1fc3df351229b284b73168e605933ef70b36810696bd53b837ee274129f28",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Living_Condition_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Medical_Device_German.xml.json",
+      "sha256": "f27218fb3349296cf2590b334199934eec8cf26a958dde03eac651de17bf3c76",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Device_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Medical_Product_Information_German.xml.json",
+      "sha256": "6b7cbbd760d304114460eae8b9c5a2bc5bca2b952cfddaf5a3a2611d63d1e7c6",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Product_Information_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_MIME_Types_German.xml.json",
+      "sha256": "48d6d758b17b9d2772a3363cc2fd00f4cdcd8d0240cb23e4da7e71dc8ce3060e",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_MIME_Types_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Nutritional_Information_German.xml.json",
+      "sha256": "7e5f4d8e4c3071f55445c22bb0f84c28059b4456515b3b37bd7e987a10151a7c",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Nutritional_Information_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Orientation_Person_German.xml.json",
+      "sha256": "6dd929cecad9ac2ac5282c5eb9ae5ebdbabcd0ea9b05262a74b732b5978ffd6d",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Person_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Orientation_Place_German.xml.json",
+      "sha256": "456c2428c1fc54e704a1d2d8e5da1d42ae3bb7d47f834ad6de5c8c0bf90ee123",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Place_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Orientation_Situation_German.xml.json",
+      "sha256": "634875fa85e7101dafa1ef03cd43acd227bb5f7b42afd18123b2c605aa728fcb",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Situation_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Orientation_Time_German.xml.json",
+      "sha256": "366b0fd0aaf7baa32dc569d4bb11a903499001fe512cb831ae30807027ca81bb",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Time_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Pain_Symptom_German.xml.json",
+      "sha256": "36b2c710ac9cb533dc966297973d42e9f512639f73842dcf799429629bb235b0",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Pain_Symptom_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Payment_Exemption_German.xml.json",
+      "sha256": "da9c9d0cb343644dd04fe5fd883432edbb5c876e67504b8ed5cf38f7910c7d93",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Payment_Exemption_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Presence_Respiratory_Support_German.xml.json",
+      "sha256": "8fbf67ac0b1eaf7fc6ab7f55ec760aca7b57033a73346696c9e9414b32159308",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Presence_Respiratory_Support_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Problem_Presence_German.xml.json",
+      "sha256": "fb04477c81744d9a8b8ae11d521f850551c96aa778479208436fdb8c1b1b0f5d",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Problem_Presence_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Relatives_Involvement_German.xml.json",
+      "sha256": "09afef25504c6389e41fa5886e2a4d2c6f2f78a73a1b920214096369138b98ed",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Involvement_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Relatives_Notification_Status_German.xml.json",
+      "sha256": "b6a3d4c511b9fa81d2b1a98c48a6e4896b102f8e2f0ec1d0d538a2235df67dfa",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Notification_Status_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Respiratory_Access_German.xml.json",
+      "sha256": "cc2fc4b761eaa48575a5e4b13210bc1d766772e4225d11a187fb181acefe6c7e",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Respiratory_Access_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Risk_German.xml.json",
+      "sha256": "c83383145369562787f84ca985732898915ff47bdb876432f965609819bdd538",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Risk_Presence_German.xml.json",
+      "sha256": "f3ee09fc11f23d9834517fdf953d4d4dcf505294b6048bdbf1e10905b53b4b71",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_Presence_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Section_Codes.xml.json",
+      "sha256": "bd52fcd2f1560229e881e0a6978e9e36e0a1673a83d039b7aa48d0a86c20c22c",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Section_Codes",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/CS/KBV_CS_MIO_ULB_Type_Of_Facility_German.xml.json",
+      "sha256": "ae92bdadfafa0841020ca124e7d4b2fb8356c708a3758a0a905e3b74a1ad0fe1",
+      "type": "CodeSystem",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Type_Of_Facility_German",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/NS/KBV_NS_MIO_ULB_Hilfsmittelverzeichnis.xml.json",
+      "sha256": "e04a98766cb38cb1245af1f68a679ef50faf23de1b1848dde69d195cdbb81989",
+      "type": "NamingSystem",
+      "version": null,
+      "canonical": null,
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Advance_Directive_Status.xml.json",
+      "sha256": "156ba0dd3e214811f2e114339419ef14ea073d01dd7ad1d5e4e14bf7ce49827d",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Advance_Directive_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Allergies.xml.json",
+      "sha256": "8bcc524e4d5d4a86d98f6e9319d09db43398c8dc29319e0ba03d91d400093cb4",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Allergies",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Assessment_Scales.xml.json",
+      "sha256": "721afde66f55f5e6d8e87b18180d92e1232e9541c4fd3345fb4a2d06328d7ba0",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Assessment_Scales",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Bathing_Hamburg_Manual.xml.json",
+      "sha256": "01fa42b4146845405dd242370316d2a610c9d0a0ec7ae87011bc4f2915c7e99e",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Bathing_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Bladder_Hamburg_Manual.xml.json",
+      "sha256": "5eb4945b8bee9207658efda392486e4a73842831c4ec270c6aff50254d0f01d5",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Bladder_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Bowel_Hamburg_Manual.xml.json",
+      "sha256": "2dcf917a423ffb03a910947c8326ff660276cc679be8f2669e09a67730ea996b",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Bowel_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Dressing_Hamburg_Manual.xml.json",
+      "sha256": "0bd6cfa5e0ef11184b2acc2de6d0c93d3b803bf8c21e3e00de36803e92e221e9",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Dressing_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Feeding_Hamburg_Manual.xml.json",
+      "sha256": "b47748d060007ad3e2d54610eb4bec3cc369e83e64d4dac66c0d8d58b650f1aa",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Feeding_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Grooming_Hamburg_Manual.xml.json",
+      "sha256": "bb1fd5bc0db3f05d56fe880c1e4a434d0f2ba774415802da307b7a147f0cc906",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Grooming_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Mobility_Hamburg_Manual.xml.json",
+      "sha256": "4dd25e62a76fea0a81d63d4ec56a5a53d2c554a901da323c5e24139d71eda404",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Mobility_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Stairs_Hamburg_Manual.xml.json",
+      "sha256": "83324e8a4363849e55a9c5cebf004dd1dce755f358abe94f3a20f13bd1124afe",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Stairs_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Toileting_Hamburg_Manual.xml.json",
+      "sha256": "a28ba8ca794bf15bc63313d11c0b00d342102a2a052b75e163db3edd54b0ed26",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Toileting_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Barthel_Transfer_Hamburg_Manual.xml.json",
+      "sha256": "edc98b638d282240cbc742450096a0d7ea91864664687a66d73f1eaa37ac52cb",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Barthel_Transfer_Hamburg_Manual",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Behavior_Finding.xml.json",
+      "sha256": "994ae8eafee6a3e3bf6d6ccb406da4f0579d4d95655cee3e8d25b87284eb0377",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Behavior_Finding",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Bladder_Continence_Status.xml.json",
+      "sha256": "6721093e9900b67cd9e9ac98eec5f346ac5bf9680663b356252db326ccff8834",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Bladder_Continence_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Bowel_Continence_Status.xml.json",
+      "sha256": "d49fda0140f835a46c3a7eb014221b141adeef83fa01d70957ac7eceb6a8a475",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Bowel_Continence_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Cognitive_Awareness.xml.json",
+      "sha256": "9fa4653b842ec11cb10b4d16c116881bb3226b12e484acd7c67faa16c7cc7ebc",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Cognitive_Awareness",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Constraint_Control_Seclusion.xml.json",
+      "sha256": "1e767c3338b159df9053d3c07c3e8cbbf1028895954d8270523bd8bb2a6062a4",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Constraint_Control_Seclusion",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Diagnosis_ICNP.xml.json",
+      "sha256": "2a2f8e8c24dbac1f92771373d390191804cffae22869da5f3d76936991bae375",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Diagnosis_ICNP",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Disability_Degree_Presence_Status.xml.json",
+      "sha256": "8c66257f0292fb5880245eea74c31addb8d90b88699d82a40f74379c4f72acf4",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Disability_Degree_Presence_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Disability.xml.json",
+      "sha256": "675cc77c2af502695b3d668dbc163c7c146ea1a5383311286e20133996a4eaf4",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Disability",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Evacuation_Bladder_Content.xml.json",
+      "sha256": "4271212242567b5588b89d300c28a8ca32a68a29c78113c01313dfe529fc23a0",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Evacuation_Bladder_Content",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Evacuation_Intestinal_Contents.xml.json",
+      "sha256": "a80ac6bfd06f064d277e1d4fd8ccd1089a051bf8227bd93ebd84ab22afa521d8",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Evacuation_Intestinal_Contents",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Food_Administration_Form.xml.json",
+      "sha256": "c64647d5d6334dec20ab2d6ea2300262b3afcc5fd53fa11d838ee2247171c677",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Food_Administration_Form",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Food_Type.xml.json",
+      "sha256": "5189e99811d9c8f16285162a15d9aee98d8c9ad5c46c9dba1071a3b8f6ff2a3f",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Food_Type",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Grade_of_Care_Status.xml.json",
+      "sha256": "f2d37a17adcc40fb7141a706c6947003d4c05970991f531ec4c238378e769c76",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Grade_of_Care_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Health_Care_Proxy_Type.xml.json",
+      "sha256": "2ff314f9dca12ff104575e311cd5a56786802bf1454f0ec0dff438be8a476bd4",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Health_Care_Proxy_Type",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Information_Legal_Guardian.xml.json",
+      "sha256": "9a9fc601cdc7b4ee45f8ddadeacee054aab84e8fa52ab59d0b4ab521edfe48ac",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Information_Legal_Guardian",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Information_Medication.xml.json",
+      "sha256": "a3e36b99282ffb8e527dbfa6fde24d53eeacab9fddae97a39c2c4116176ba2da",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Information_Medication",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Interventions_ICNP.xml.json",
+      "sha256": "436e4d703765793cee0adb6f8d3611cfa4c885ef5ef81b342d9f9af85c4b9880",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Interventions_ICNP",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Isolation_Necessity.xml.json",
+      "sha256": "0dd64d798b965a57a5ca978dfc959d99451b1f6b749066ce860c5c6536b1d021",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Isolation_Necessity",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Isolation_Type.xml.json",
+      "sha256": "3c105e14a8d5631db402fabc60b544c4251ce4b05ac40d8aa1f87cc71f3f4b02",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Isolation_Type",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Level_of_Care.xml.json",
+      "sha256": "9d975c8e99c74afd0df310fca6743a853ddaca4d03e739feed6eade8254a4e57",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Level_of_Care",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Living_Condition.xml.json",
+      "sha256": "d0e6ee31073f6816c0c9c09f89e4748ae8856dccd4e4003e9825e5ea68d45aaa",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Living_Condition",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Medical_Device.xml.json",
+      "sha256": "393a530dd7420ffe0081f34ca1b04de372c4db926d7e586a941fffd5c00b0440",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Medical_Device",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Medical_Product_Information.xml.json",
+      "sha256": "62e4179f9bdba16f8761ca0c8d5d9b077339598899ed3d43c55dd39d6661e608",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Medical_Product_Information",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_MIME_Types.xml.json",
+      "sha256": "dbcd6abc26a16120da9e766497a6a05c6df457095967031b8ccb836367935e3a",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_MIME_Types",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Nutrition.xml.json",
+      "sha256": "144f5e335f7ff8c712c64b758be37a9e6c39b0b0fc5a6ef183ca4e2fb8ea8984",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Nutrition",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Nutritional_Information.xml.json",
+      "sha256": "1ad705c809e8c4910a738d3c46e5817d69d0fbc8a717cbdf04e3d0ecac17322c",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Nutritional_Information",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Orientation_Person.xml.json",
+      "sha256": "7e118ddb5731417a957adc39d7ead8c3f12f98ae1606f77fe943752335de1dad",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Orientation_Person",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Orientation_Place.xml.json",
+      "sha256": "c6451a810cc924b9bcabf433443b49433e8918514236fb0944f4cd49d5d937a6",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Orientation_Place",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Orientation_Situation.xml.json",
+      "sha256": "4a800a71efb5bd9c210c69ca471260e4594acb2d7aa148279517768e512eac9b",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Orientation_Situation",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Orientation_Time.xml.json",
+      "sha256": "31e4313fa4d2c5afab5bb259c92e515e33dfcc7bb7df35482f92810235097c39",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Orientation_Time",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Pain_Symptom.xml.json",
+      "sha256": "d38c6598be071df29773766bca2640763f9966346c5759fdd13ce629477ad9de",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Pain_Symptom",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Payment_Exemption.xml.json",
+      "sha256": "2fc1e919ddfea0d0f191a2b4ff501bc738fdd41867b27e52ed8f8204dcab9a13",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Payment_Exemption",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Presence_Respiratory_Support.xml.json",
+      "sha256": "74f53fe95629589338ddded35e7d984aa4e25f374f925b7c6d79b0a83f5af3f9",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Presence_Respiratory_Support",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Problem_Presence.xml.json",
+      "sha256": "68d7ff1593e97df47f5aea10a1ed656574e4123128547c04dcca8307fbc01b3e",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Problem_Presence",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Relatives_Involvement.xml.json",
+      "sha256": "1deda35cf33a4a063d45840ea5d0c7b690ae9637d2eb7272427d66a9935ec158",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Relatives_Involvement",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Relatives_Notification_Status.xml.json",
+      "sha256": "9c176029b05335d55fc7f28d35e5c89ebfc20dc492861d9573d80637df394194",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Relatives_Notification_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Request_Status.xml.json",
+      "sha256": "eff7c37fd0be56f8434159de8a16b4d9a73c175212df85899f8830892af1b769",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Request_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Residence_Status.xml.json",
+      "sha256": "ef2471dc5f91a7ac00f33844138239c139fc91b005c2879db423f9aa91107339",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Residence_Status",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Respiratory_Access.xml.json",
+      "sha256": "fb1abe09817d9803206f728ebb8fac29f5348c82f635c49628331d7b8f6f4f20",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Respiratory_Access",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Result_Qualitative.xml.json",
+      "sha256": "d789c1300e7aef557ad6e93132d3699a22314c8cabce08f95ba85c6909744cf5",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Result_Qualitative",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Risk_Presence.xml.json",
+      "sha256": "4550def1845683398205bcbe4cb6cfc6f55e2f1dac130d61c62ed49e2c8296c8",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Risk_Presence",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Risk.xml.json",
+      "sha256": "6f3d3eba90924203fa5921aead9848ee1adf5c639a85d8d9de79a825c35d62f3",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Risk",
+      "fhirVersion": null
+    },
+    {
+      "file": "PIO_Überleitungsbogen/Terminologie/VS/KBV_VS_MIO_ULB_Type_Of_Facility.xml.json",
+      "sha256": "d7b059fbcd653a46b4e6e55732b83b933e5a8d7f8c3137f105097bfc13bf8623",
+      "type": "ValueSet",
+      "version": "1.0.0",
+      "canonical": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Type_Of_Facility",
+      "fhirVersion": null
+    }
+  ]
+}

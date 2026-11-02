@@ -1,0 +1,3298 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "KBV-CM-MIO-ULB-Overview",
+  "url": "https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_ULB_Overview",
+  "version": "1.0.0",
+  "name": "KBV_CM_MIO_ULB_Overview",
+  "title": "KBV_CM_MIO_ULB_Overview",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://mio.kbv.de"
+        }
+      ]
+    }
+  ],
+  "description": "Diese Conceptmap verknüpft die Codes für KBV_CM_MIO_ULB_Overview mit deutschen Bezeichnungen.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Advance_Directive_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "310301000:363713009=2667000",
+          "display": "Advance healthcare directive status (finding) : Has interpretation (attribute) = Absent (qualifier value)",
+          "target": [
+            {
+              "code": "PersoenlicheErklaerungnichtvorhanden",
+              "display": "Persönliche Erklärung nicht vorhanden",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "310301000:363713009=373068000",
+          "display": "Advance healthcare directive status (finding) : Has interpretation (attribute) = Undetermined (qualifier value)",
+          "target": [
+            {
+              "code": "VorhandenseinvonPersoenlichenErklaerungenunbekannt",
+              "display": "Vorhandensein von Persönlichen Erklärungen unbekannt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "310301000:363713009=52101004",
+          "display": "Advance healthcare directive status (finding) : Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "PersoenlicheErklaerungvorhanden",
+              "display": "Persönliche Erklärung vorhanden",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Allergies_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "420134006:363713009=2667000",
+          "display": "Propensity to adverse reaction (finding) : Has interpretation (attribute) = Absent (qualifier value)",
+          "target": [
+            {
+              "code": "AllergienoderUnvertraeglichkeitenliegennichtvor",
+              "display": "Allergien oder Unverträglichkeiten liegen nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "420134006:363713009=373068000",
+          "display": "Propensity to adverse reaction (finding) : Has interpretation (attribute) = Undetermined (qualifier value)",
+          "target": [
+            {
+              "code": "VorliegenvonAllergienoderUnvertraeglichkeitenunbekannt",
+              "display": "Vorliegen von Allergien oder Unverträglichkeiten unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "420134006:363713009=52101004",
+          "display": "Propensity to adverse reaction (finding) : Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "AllergienoderUnvertraeglichkeitenliegenvor",
+              "display": "Allergien oder Unverträglichkeiten liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bladder_Continence_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "129853007",
+          "display": "Total urinary incontinence (finding)",
+          "target": [
+            {
+              "code": "Komplettinkontinent",
+              "display": "Komplett inkontinent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "165234001",
+          "display": "Bladder: fully continent (finding)",
+          "target": [
+            {
+              "code": "Staendigkontinent",
+              "display": "Ständig kontinent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "450841000",
+          "display": "Intermittent urinary incontinence (finding)",
+          "target": [
+            {
+              "code": "Ueberwiegendinkontinent",
+              "display": "Überwiegend inkontinent",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "45850009",
+          "display": "Continent of urine (finding)",
+          "target": [
+            {
+              "code": "Ueberwiegendkontinent",
+              "display": "Überwiegend kontinent",
+              "equivalence": "wider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Bowel_Continence_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "1086911000119107",
+          "display": "Complete fecal incontinence (finding)",
+          "target": [
+            {
+              "code": "Komplettinkontinent",
+              "display": "Komplett inkontinent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "165230005",
+          "display": "Bowels: occasional accident (finding)",
+          "target": [
+            {
+              "code": "Ueberwiegendkontinent",
+              "display": "Überwiegend kontinent",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "24029004",
+          "display": "Bowels: fully continent (finding)",
+          "target": [
+            {
+              "code": "Staendigkontinent",
+              "display": "Ständig kontinent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "72042002",
+          "display": "Incontinence of feces (finding)",
+          "target": [
+            {
+              "code": "Ueberwiegendinkontinent",
+              "display": "Überwiegend inkontinent",
+              "equivalence": "wider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Cognitive_Awareness_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "24473007",
+          "display": "Persistent vegetative state (disorder)",
+          "target": [
+            {
+              "code": "Wachkoma",
+              "display": "Wachkoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "271591004",
+          "display": "Fully conscious (finding)",
+          "target": [
+            {
+              "code": "keineBewusstseinsminderungodersteigerung",
+              "display": "keine Bewusstseinsminderung oder -steigerung",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "271782001",
+          "display": "Drowsy (finding)",
+          "target": [
+            {
+              "code": "Somnolenz",
+              "display": "Somnolenz",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "274659008",
+          "display": "Semicoma (disorder)",
+          "target": [
+            {
+              "code": "Sopor",
+              "display": "Sopor",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "371632003",
+          "display": "Coma (disorder)",
+          "target": [
+            {
+              "code": "Koma",
+              "display": "Koma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "404640003",
+          "display": "Dizziness (finding)",
+          "target": [
+            {
+              "code": "Benommenheit",
+              "display": "Benommenheit",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "423752000",
+          "display": "Hypervigilant behavior (finding)",
+          "target": [
+            {
+              "code": "Hypervigilitaet",
+              "display": "Hypervigilität",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Constraint_Control_Seclusion_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "129125009:363589002=225214000,408730004=410536001",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Contraindicated (qualifier value)",
+          "target": [
+            {
+              "code": "FreiheitsentziehendeMassnahmensindnichtnotwendig",
+              "display": "Freiheitsentziehende Maßnahmen sind nicht notwendig.",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "129125009:363589002=225214000,408730004=410537005",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Action status unknown (qualifier value)",
+          "target": [
+            {
+              "code": "EsistunbekanntobfreiheitsentziehendeMassnahmennotwendigsind",
+              "display": "Es ist unbekannt, ob freiheitsentziehende Maßnahmen notwendig sind.",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "129125009:363589002=225214000,408730004=897015005",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure) , Procedure context (attribute) = Recommended (qualifier value)",
+          "target": [
+            {
+              "code": "FreiheitsentziehendeMassnahmensindnotwendig",
+              "display": "Freiheitsentziehende Maßnahmen sind notwendig.",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_Degree_Presence_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "404684003:363713009=2667000,47429007=(21134002:363713009=272520006)",
+          "display": "Clinical finding (finding) : Has interpretation (attribute) = Absent (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )",
+          "target": [
+            {
+              "code": "EinBehinderungsgradistnichtvorhanden",
+              "display": "Ein Behinderungsgrad ist nicht vorhanden.",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "404684003:363713009=373068000,47429007=(21134002:363713009=272520006)",
+          "display": "Clinical finding (finding) : Has interpretation (attribute) = Undetermined (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )",
+          "target": [
+            {
+              "code": "EsistunbekanntobeinBehinderungsgradvorhandenist",
+              "display": "Es ist unbekannt, ob ein Behinderungsgrad vorhanden ist.",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "404684003:363713009=52101004,47429007=(21134002:363713009=272520006)",
+          "display": "Clinical finding (finding) : Has interpretation (attribute) = Present (qualifier value) , Associated with (attribute) = ( Disability (finding) : Has interpretation (attribute) = Degree findings (qualifier value) )",
+          "target": [
+            {
+              "code": "EinBehinderungsgradistvorhanden",
+              "display": "Ein Behinderungsgrad ist vorhanden.",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Disability_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "373572006:246090004=105719004",
+          "display": "Clinical finding absent (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)",
+          "target": [
+            {
+              "code": "Funktionseinschraenkungliegtnichtvor",
+              "display": "Funktionseinschränkung liegt nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373573001:246090004=105719004",
+          "display": "Clinical finding present (situation) : Associated finding (attribute) = Body disability AND/OR failure state (finding)",
+          "target": [
+            {
+              "code": "Funktionseinschraenkungliegtvor",
+              "display": "Funktionseinschränkung liegt vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=105719004,408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = Body disability AND/OR failure state (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "VorliegenvonFunktionseinschraenkungenunbekannt",
+              "display": "Vorliegen von Funktionseinschränkungen unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Bladder_Content_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "106098005",
+          "display": "Urinary system finding (finding)",
+          "target": [
+            {
+              "code": "andere",
+              "display": "andere",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "302113004",
+          "display": "Urostomy present (finding)",
+          "target": [
+            {
+              "code": "UrostomieKatheter",
+              "display": "Urostomie-Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "404684003:47429007=34759008,363713009=52101004",
+          "display": "Clinical finding (finding) : Associated with (attribute) = Urethral catheter, device (physical object) , Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "intraurethralerKatheter",
+              "display": "intraurethraler Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "404684003:47429007=414846002,363713009=52101004",
+          "display": "Clinical finding (finding) : Associated with (attribute) = Nephrostomy system (physical object) , Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "NephrostomieKatheter",
+              "display": "Nephrostomie-Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "440311000",
+          "display": "Suprapubic urinary catheter in situ (finding)",
+          "target": [
+            {
+              "code": "suprapubischerCystostomieKatheter",
+              "display": "suprapubischer Cystostomie-Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Evacuation_Intestinal_Contents_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "302111002",
+          "display": "Ileostomy present (finding)",
+          "target": [
+            {
+              "code": "Ileostoma",
+              "display": "Ileostoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "302112009",
+          "display": "Colostomy present (finding)",
+          "target": [
+            {
+              "code": "Colostoma",
+              "display": "Colostoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "404684003:47429007=266683002",
+          "display": "Clinical finding (finding) : Associated with (attribute) = Evacuation of gastrointestinal tract contents (procedure)",
+          "target": [
+            {
+              "code": "andere",
+              "display": "andere",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "404684003:47429007=787802002",
+          "display": "Clinical finding (finding) : Associated with (attribute) = Insertion of flatus tube into rectum (procedure)",
+          "target": [
+            {
+              "code": "RektumDarmrohr",
+              "display": "Rektum (Darmrohr)",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Administration_Form_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "225373002",
+          "display": "Percutaneous endoscopic gastrostomy feeding (regime/therapy)",
+          "target": [
+            {
+              "code": "ErnaehrungueberperkutaneendoskopischeGastrostomie",
+              "display": "Ernährung über perkutane endoskopische Gastrostomie",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "230114001",
+          "display": "Central line feeding (regime/therapy)",
+          "target": [
+            {
+              "code": "ZentraleintravenoeseErnaehrung",
+              "display": "Zentrale intravenöse Ernährung",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "230115000",
+          "display": "Peripheral line feeding (regime/therapy)",
+          "target": [
+            {
+              "code": "PeriphereintravenoeseErnaehrung",
+              "display": "Periphere intravenöse Ernährung",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "289156007:363714003=870690008",
+          "display": "Feeding finding (finding) : Interprets (attribute) = Oral intake (observable entity)",
+          "target": [
+            {
+              "code": "OraleKostdarreichungsform",
+              "display": "Orale Kostdarreichungsform",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61420007",
+          "display": "Tube feeding of patient (regime/therapy)",
+          "target": [
+            {
+              "code": "ErnaehrungueberMagensonde",
+              "display": "Ernährung über Magensonde",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Food_Type_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "10888001",
+          "display": "Liquid diet (finding)",
+          "target": [
+            {
+              "code": "FluessigeKost",
+              "display": "Flüssige Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11739001",
+          "display": "High residue diet (finding)",
+          "target": [
+            {
+              "code": "BallaststoffreicheKost",
+              "display": "Ballaststoffreiche Kost",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "138045004",
+          "display": "Vegan diet (finding)",
+          "target": [
+            {
+              "code": "VeganeKost",
+              "display": "Vegane Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "14627000",
+          "display": "Increased protein diet (finding)",
+          "target": [
+            {
+              "code": "EiweissreichKost",
+              "display": "Eiweißreich Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "160670007",
+          "display": "Diabetic diet (finding)",
+          "target": [
+            {
+              "code": "Diabeteskost",
+              "display": "Diabeteskost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "16208003",
+          "display": "Low fat diet (finding)",
+          "target": [
+            {
+              "code": "FettarmeKost",
+              "display": "Fettarme Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "16985007",
+          "display": "Fasting (finding)",
+          "target": [
+            {
+              "code": "Nuechtern",
+              "display": "Nüchtern",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "182924003",
+          "display": "Light diet (finding)",
+          "target": [
+            {
+              "code": "LeichteVollkost",
+              "display": "Leichte Vollkost",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "226217002",
+          "display": "Metabolic diet (finding)",
+          "target": [
+            {
+              "code": "StoffwechseladaptierteDiaet",
+              "display": "Stoffwechseladaptierte Diät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "226237003",
+          "display": "No pork diet (finding)",
+          "target": [
+            {
+              "code": "SchweinefleischfreieKost",
+              "display": "Schweinefleischfreie Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "22745007",
+          "display": "Purine restricted diet (finding)",
+          "target": [
+            {
+              "code": "PurinarmKost",
+              "display": "Purinarm Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "228067006",
+          "display": "Raw food (substance)",
+          "target": [
+            {
+              "code": "Rohkost",
+              "display": "Rohkost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "248126008",
+          "display": "Comfort eating (finding)",
+          "target": [
+            {
+              "code": "Wunschkost",
+              "display": "Wunschkost",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "26041009",
+          "display": "Potassium restricted diet (finding)",
+          "target": [
+            {
+              "code": "KaliumarmeKost",
+              "display": "Kaliumarme Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "267111003",
+          "display": "Vegan or strict vegetarian (finding)",
+          "target": [
+            {
+              "code": "VegetarischeKost",
+              "display": "Vegetarische Kost",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "359649009",
+          "display": "Weight reduction diet (finding)",
+          "target": [
+            {
+              "code": "Reduktionskost",
+              "display": "Reduktionskost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "36823005",
+          "display": "Normal diet (finding)",
+          "target": [
+            {
+              "code": "Vollkost",
+              "display": "Vollkost",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "38226001",
+          "display": "Bland diet (finding)",
+          "target": [
+            {
+              "code": "Schonkost",
+              "display": "Schonkost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "386619000",
+          "display": "Low sodium diet (finding)",
+          "target": [
+            {
+              "code": "KochsalzarmeKost",
+              "display": "Kochsalzarme Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "386620006",
+          "display": "No added salt diet (finding)",
+          "target": [
+            {
+              "code": "KochsalzfreieKost",
+              "display": "Kochsalzfreie Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "425458000",
+          "display": "Lactose-free diet (regime/therapy)",
+          "target": [
+            {
+              "code": "LaktosefreiearmeKost",
+              "display": "Laktosefreie/-arme Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "437391000124102",
+          "display": "Increased potassium diet (regime/therapy)",
+          "target": [
+            {
+              "code": "KaliumreicheKost",
+              "display": "Kaliumreiche Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "437651000124104",
+          "display": "Gluten free diet (regime/therapy)",
+          "target": [
+            {
+              "code": "GlutenfreiearmeKost",
+              "display": "Glutenfreie/-arme Kost",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "439101000124101",
+          "display": "Easy to chew diet (regime/therapy)",
+          "target": [
+            {
+              "code": "WeicheKost",
+              "display": "Weiche Kost",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "439121000124106",
+          "display": "Pureed diet (regime/therapy)",
+          "target": [
+            {
+              "code": "PuerierteKost",
+              "display": "Pürierte Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68097001",
+          "display": "Increased calorie diet (finding)",
+          "target": [
+            {
+              "code": "KalorienreicheAufbaukost",
+              "display": "Kalorienreiche Aufbaukost",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "765022009",
+          "display": "Lacto-vegetarian diet (regime/therapy)",
+          "target": [
+            {
+              "code": "OvolactischohneFisch",
+              "display": "Ovo-lactisch ohne Fisch",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "765022009:424361007=735971005",
+          "display": "Lacto-vegetarian diet (regime/therapy) : Using substance (attribute) = Fish (substance)",
+          "target": [
+            {
+              "code": "OvolactischmitFisch",
+              "display": "Ovo-lactisch mit Fisch",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "765025006",
+          "display": "Kosher diet (regime/therapy)",
+          "target": [
+            {
+              "code": "KoschereKost",
+              "display": "Koschere Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "765053006",
+          "display": "Low fructose diet (regime/therapy)",
+          "target": [
+            {
+              "code": "FructosefreiearmeKost",
+              "display": "Fructosefreie/-arme Kost",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "77806000",
+          "display": "Calorie restricted diet (finding)",
+          "target": [
+            {
+              "code": "KalorienreduzierteKost",
+              "display": "Kalorienreduzierte Kost",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Care_Proxy_Type_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "186065003",
+          "display": "Power of attorney medical report (record artifact)",
+          "target": [
+            {
+              "code": "Vorsorgevollmacht",
+              "display": "Vorsorgevollmacht",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "371538006",
+          "display": "Advance directive report (record artifact)",
+          "target": [
+            {
+              "code": "Patientenverfuegung",
+              "display": "Patientenverfügung",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "772790007",
+          "display": "Organ donor card (record artifact)",
+          "target": [
+            {
+              "code": "GewebeOrganspendeerklaerung",
+              "display": "Gewebe_Organspendeerklärung",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Legal_Guardian_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=2667000)}",
+          "display": "Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Absent (qualifier value) ) }",
+          "target": [
+            {
+              "code": "GesetzlicheBetreuungliegtnichtvor",
+              "display": "Gesetzliche Betreuung liegt nicht vor",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=373068000)}",
+          "display": "Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Undetermined (qualifier value) ) }",
+          "target": [
+            {
+              "code": "VorliegenvongesetzlicherBetreuungunbekannt",
+              "display": "Vorliegen von gesetzlicher Betreuung unbekannt",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "243796009:{408732007=58626002}{246090004=(404684003:47429007=419891008)}{246090004=(310385006:363713009=52101004)}",
+          "display": "Situation with explicit context (situation) : { Subject relationship context (attribute) = Legal guardian (person) } { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Record artifact (record artifact) ) } { Associated finding (attribute) = ( Information status (finding) : Has interpretation (attribute) = Present (qualifier value) ) }",
+          "target": [
+            {
+              "code": "GesetzlicheBetreuungliegtvor",
+              "display": "Gesetzliche Betreuung liegt vor",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Information_Medication_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "242571000000102",
+          "display": "Patient not on medication (finding)",
+          "target": [
+            {
+              "code": "Medikationliegtnichtvor",
+              "display": "Medikation liegt nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "309298003:363713009=373068000",
+          "display": "Drug therapy finding (finding) : Has interpretation (attribute) = Undetermined (qualifier value)",
+          "target": [
+            {
+              "code": "VorliegenvonMedikationunbekannt",
+              "display": "Vorliegen von Medikation unbekannt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "309298003:363713009=52101004",
+          "display": "Drug therapy finding (finding) : Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "Medikationliegtvor",
+              "display": "Medikation liegt vor",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Necessity_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "129125009:363589002=40174006,408730004=410537005",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Action status unknown (qualifier value)",
+          "target": [
+            {
+              "code": "ErfordernisraeumlicherIsolationunbekannt",
+              "display": "Erfordernis räumlicher Isolation unbekannt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "129125009:363589002=40174006,408730004=897015005",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Recommended (qualifier value)",
+          "target": [
+            {
+              "code": "RaeumlicheIsolationnotwendig",
+              "display": "Räumliche Isolation notwendig",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "129125009:363589002=40174006,408730004=897016006",
+          "display": "Procedure with explicit context (situation) : Associated procedure (attribute) = Isolation procedure (procedure) , Procedure context (attribute) = Not recommended (qualifier value)",
+          "target": [
+            {
+              "code": "RaeumlicheIsolationnichtnotwendig",
+              "display": "Räumliche Isolation nicht notwendig",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Isolation_Type_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "170497006",
+          "display": "Isolation because of infection (procedure)",
+          "target": [
+            {
+              "code": "FremdschutzIsolationSchutzanderer",
+              "display": "Fremdschutz Isolation (Schutz anderer)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "275829005",
+          "display": "Reverse isolation (procedure)",
+          "target": [
+            {
+              "code": "UmkehrisolationSchutzdesderPatientIn",
+              "display": "Umkehrisolation (Schutz des/der PatientIn)",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/device-statement-status",
+      "sourceVersion": "4.0.1",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_KBV_VS_Base_Device_Use_Statement_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "active",
+          "display": "Active",
+          "target": [
+            {
+              "code": "Aktiv",
+              "display": "Aktiv",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "display": "Completed",
+          "target": [
+            {
+              "code": "Abgeschlossen",
+              "display": "Abgeschlossen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "Entered in Error",
+          "target": [
+            {
+              "code": "IrrtuemlicheEingabe",
+              "display": "Irrtümliche Eingabe",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "intended",
+          "display": "Intended",
+          "target": [
+            {
+              "code": "Beabsichtigt",
+              "display": "Beabsichtigt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "display": "On Hold",
+          "target": [
+            {
+              "code": "Suspendiert",
+              "display": "Suspendiert",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "display": "Stopped",
+          "target": [
+            {
+              "code": "Gestoppt",
+              "display": "Gestoppt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Living_Condition_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "105529008",
+          "display": "Lives alone (finding)",
+          "target": [
+            {
+              "code": "alleinlebend",
+              "display": "alleinlebend",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11762561000119103",
+          "display": "Assisted living facility patient (finding)",
+          "target": [
+            {
+              "code": "betreutesWohnen",
+              "display": "betreutes Wohnen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "31879006",
+          "display": "Lives in a community (finding)",
+          "target": [
+            {
+              "code": "WohnLebensgemeinschaft",
+              "display": "Wohn/Lebensgemeinschaft",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "365481000",
+          "display": "Finding of household composition (finding)",
+          "target": [
+            {
+              "code": "AnderesWohnverhaeltnis",
+              "display": "Anderes Wohnverhältnis",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "365508006:{363714003=224209007,363713009=373068000}{418775008=84100007}",
+          "display": "Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Undetermined (qualifier value) } { Finding method (attribute) = History taking (procedure) }",
+          "target": [
+            {
+              "code": "unbekannt",
+              "display": "unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "365508006:{363714003=224209007,363713009=413456002}{418775008=84100007}",
+          "display": "Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Adult day care center (environment) } { Finding method (attribute) = History taking (procedure) }",
+          "target": [
+            {
+              "code": "teilstationaer",
+              "display": "teilstationär",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "365508006:{363714003=224209007,363713009=440654001}{418775008=84100007}",
+          "display": "Finding of residence and accommodation circumstances (finding) : { Interprets (attribute) = Residence and accommodation circumstances (observable entity) , Has interpretation (attribute) = Inpatient environment (environment) } { Finding method (attribute) = History taking (procedure) }",
+          "target": [
+            {
+              "code": "stationaer",
+              "display": "stationär",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:ietf:bcp:13",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_MIME_Types_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "application/pdf",
+          "display": "application/pdf",
+          "target": [
+            {
+              "code": "PDFAnhang",
+              "display": "PDF-Anhang",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "image/jpeg",
+          "display": "image/jpeg",
+          "target": [
+            {
+              "code": "JPEGBild",
+              "display": "JPEG-Bild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "image/png",
+          "display": "image/png",
+          "target": [
+            {
+              "code": "PNGBild",
+              "display": "PNG-Bild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "image/tiff",
+          "display": "image/tiff",
+          "target": [
+            {
+              "code": "TIFFBild",
+              "display": "TIFF-Bild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text/plain",
+          "display": "text/plain",
+          "target": [
+            {
+              "code": "Klartext",
+              "display": "Klartext",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text/rtf",
+          "display": "text/rtf",
+          "target": [
+            {
+              "code": "RTFText",
+              "display": "RTF-Text",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20200131",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Device_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "102303004",
+          "display": "Vascular prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "Gefaessprothese",
+              "display": "Gefäßprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "102314001",
+          "display": "Embolization coil, device (physical object)",
+          "target": [
+            {
+              "code": "Embolisationsspule",
+              "display": "Embolisationsspule",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "102319006",
+          "display": "Percutaneous transluminal angioplasty balloon, device (physical object)",
+          "target": [
+            {
+              "code": "PerkutanetransluminaleAngioplastieBallon",
+              "display": "Perkutane transluminale Angioplastie Ballon",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "118374007",
+          "display": "Silicone implant, device (physical object)",
+          "target": [
+            {
+              "code": "Silikonimplantat",
+              "display": "Silikonimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "118375008",
+          "display": "Cardiac septum prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "HerzscheidewandProthese",
+              "display": "Herzscheidewand-Prothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "118378005",
+          "display": "Pacemaker pulse generator, device (physical object)",
+          "target": [
+            {
+              "code": "SchrittmacherImpulsgeber",
+              "display": "Schrittmacher-Impulsgeber",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "118425005",
+          "display": "Cerebral ventricular reservoir device (physical object)",
+          "target": [
+            {
+              "code": "VentrikulaeresReservoir",
+              "display": "Ventrikuläres Reservoir",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "14106009",
+          "display": "Cardiac pacemaker, device (physical object)",
+          "target": [
+            {
+              "code": "Herzschrittmacher",
+              "display": "Herzschrittmacher",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "16349000",
+          "display": "Orthopedic device (physical object)",
+          "target": [
+            {
+              "code": "OrthopaedischesGeraet",
+              "display": "Orthopädisches Gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "17107009",
+          "display": "Mitral valve prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Mitralklappenprothese",
+              "display": "Mitralklappenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "19923001",
+          "display": "Catheter, device (physical object)",
+          "target": [
+            {
+              "code": "Katheter",
+              "display": "Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "2282003",
+          "display": "Prosthetic breast implant (physical object)",
+          "target": [
+            {
+              "code": "Brustprothese",
+              "display": "Brustprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "24073000",
+          "display": "Artificial cardiac valve prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "KuenstlicheHerzklappenprothese",
+              "display": "Künstliche Herzklappenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "25510005",
+          "display": "Cardiac valve prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Herzklappenprothese",
+              "display": "Herzklappenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257275005",
+          "display": "Spinal cage (physical object)",
+          "target": [
+            {
+              "code": "Wirbelsaeulenkaefig",
+              "display": "Wirbelsäulenkäfig",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257282009",
+          "display": "Non-valved conduit (physical object)",
+          "target": [
+            {
+              "code": "LeitungohneVentil",
+              "display": "Leitung ohne Ventil",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257283004",
+          "display": "Valved cardiac conduit (physical object)",
+          "target": [
+            {
+              "code": "VentilierterHerzkanal",
+              "display": "Ventilierter Herzkanal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257327003",
+          "display": "Dynamic hip screw plate (physical object)",
+          "target": [
+            {
+              "code": "DHSPlatte",
+              "display": "DHS-Platte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257343005",
+          "display": "Xenograft cardiac valve (physical object)",
+          "target": [
+            {
+              "code": "XenotransplantatHerzklappe",
+              "display": "Xenotransplantat-Herzklappe",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257362008",
+          "display": "Plastic stent (physical object)",
+          "target": [
+            {
+              "code": "KunststoffStent",
+              "display": "Kunststoff-Stent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257363003",
+          "display": "Metal stent (physical object)",
+          "target": [
+            {
+              "code": "MetallStent",
+              "display": "Metall-Stent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "257366006",
+          "display": "JJ stent (physical object)",
+          "target": [
+            {
+              "code": "JJStent",
+              "display": "JJ-Stent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "258593008",
+          "display": "Ventricular shunt (physical object)",
+          "target": [
+            {
+              "code": "VentrikulaererShunt",
+              "display": "Ventrikulärer Shunt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "25937001",
+          "display": "Neurostimulator, device (physical object)",
+          "target": [
+            {
+              "code": "NeurostimulatorGeraet",
+              "display": "Neurostimulator, Gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "264824009",
+          "display": "Cardiac conduit (physical object)",
+          "target": [
+            {
+              "code": "Herzleitung",
+              "display": "Herzleitung",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "268460000",
+          "display": "Intrauterine contraceptive device (physical object)",
+          "target": [
+            {
+              "code": "IntrauterinesVerhuetungsmittel",
+              "display": "Intrauterines Verhütungsmittel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "271003",
+          "display": "Bone plate, device (physical object)",
+          "target": [
+            {
+              "code": "Knochenplatte",
+              "display": "Knochenplatte",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "272245008",
+          "display": "Maxillofacial prosthesis/appliance (physical object)",
+          "target": [
+            {
+              "code": "KieferundGesichtsprothesegeraet",
+              "display": "Kiefer- und Gesichtsprothese / -gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "272287005",
+          "display": "Inlay dental restoration (physical object)",
+          "target": [
+            {
+              "code": "InlayZahnersatz",
+              "display": "Inlay-Zahnersatz",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "272307009",
+          "display": "Endosseous oral implant (physical object)",
+          "target": [
+            {
+              "code": "EnossalesoralesImplantat",
+              "display": "Enossales orales Implantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "27606000",
+          "display": "Dental prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "Zahnprothese",
+              "display": "Zahnprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "286558002",
+          "display": "Ureteric stent (physical object)",
+          "target": [
+            {
+              "code": "Ureterstent",
+              "display": "Ureterstent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "286576009",
+          "display": "Urethral stent (physical object)",
+          "target": [
+            {
+              "code": "Harnroehrenstent",
+              "display": "Harnröhrenstent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303277008",
+          "display": "Fallopian tube prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Eileiterprothese",
+              "display": "Eileiterprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303490004",
+          "display": "Cardiovascular implant (physical object)",
+          "target": [
+            {
+              "code": "HerzKreislaufImplantat",
+              "display": "Herz-Kreislauf-Implantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303497001",
+          "display": "Urogenital implant (physical object)",
+          "target": [
+            {
+              "code": "Urogenitalimplantat",
+              "display": "Urogenitalimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303499003",
+          "display": "Gastrointestinal implant (physical object)",
+          "target": [
+            {
+              "code": "MagenDarmImplantat",
+              "display": "Magen-Darm-Implantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303500007",
+          "display": "Auditory implant (physical object)",
+          "target": [
+            {
+              "code": "Hoerimplantat",
+              "display": "Hörimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303503009",
+          "display": "Musculoskeletal implant (physical object)",
+          "target": [
+            {
+              "code": "MuskelSkelettImplantat",
+              "display": "Muskel-Skelett-Implantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303515008",
+          "display": "Orbital implant (physical object)",
+          "target": [
+            {
+              "code": "Orbitalimplantat",
+              "display": "Orbitalimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303533002",
+          "display": "Hip joint implant (physical object)",
+          "target": [
+            {
+              "code": "Hueftgelenkimplantat",
+              "display": "Hüftgelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303608005",
+          "display": "Ophthalmological implant (physical object)",
+          "target": [
+            {
+              "code": "Augenimplantat",
+              "display": "Augenimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303617005",
+          "display": "Vascular implant (physical object)",
+          "target": [
+            {
+              "code": "Gefaessimplantat",
+              "display": "Gefäßimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303618000",
+          "display": "Nervous system implant (physical object)",
+          "target": [
+            {
+              "code": "ImplantatdesNervensystems",
+              "display": "Implantat des Nervensystems",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303619008",
+          "display": "Cardiac implant (physical object)",
+          "target": [
+            {
+              "code": "Herzimplantat",
+              "display": "Herzimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303726000",
+          "display": "Shoulder joint prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Schultergelenkprothese",
+              "display": "Schultergelenkprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "303947005",
+          "display": "Rod fixation system (physical object)",
+          "target": [
+            {
+              "code": "Stangenfixierungssystem",
+              "display": "Stangenfixierungssystem",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304070008",
+          "display": "Body wall implant (physical object)",
+          "target": [
+            {
+              "code": "Koerperwandimplantat",
+              "display": "Körperwandimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304120007",
+          "display": "Total hip replacement prosthesis (physical object)",
+          "target": [
+            {
+              "code": "TotalHueftprothese",
+              "display": "Total Hüftprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304121006",
+          "display": "Femoral head prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Femurkopfprothese",
+              "display": "Femurkopfprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304124003",
+          "display": "Shoulder joint implant (physical object)",
+          "target": [
+            {
+              "code": "Schultergelenkimplantat",
+              "display": "Schultergelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304184000",
+          "display": "Ankle joint implant (physical object)",
+          "target": [
+            {
+              "code": "Sprunggelenkimplantat",
+              "display": "Sprunggelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304185004",
+          "display": "Foot joint implant (physical object)",
+          "target": [
+            {
+              "code": "Fussgelenkimplantat",
+              "display": "Fußgelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "304186003",
+          "display": "Hand joint implant (physical object)",
+          "target": [
+            {
+              "code": "Handgelenkimplantat",
+              "display": "Handgelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "31031000",
+          "display": "Orthopedic internal fixation system, device (physical object)",
+          "target": [
+            {
+              "code": "OrthopaedischesinternesFixationssystem",
+              "display": "Orthopädisches internes Fixationssystem",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "314523008",
+          "display": "Joint implant (physical object)",
+          "target": [
+            {
+              "code": "Gelenkimplantat",
+              "display": "Gelenkimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "339648008",
+          "display": "Colostomy bag (physical object)",
+          "target": [
+            {
+              "code": "Kolostomiebeutel",
+              "display": "Kolostomiebeutel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "341036005",
+          "display": "Colostomy set (physical object)",
+          "target": [
+            {
+              "code": "KolostomieSet",
+              "display": "Kolostomie-Set",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "342706005",
+          "display": "Ileostomy set (physical object)",
+          "target": [
+            {
+              "code": "IleostomieSet",
+              "display": "Ileostomie-Set",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "344088002",
+          "display": "Urostomy bag (physical object)",
+          "target": [
+            {
+              "code": "UrostomieBeutel",
+              "display": "Urostomie-Beutel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "344575009",
+          "display": "Urostomy set (physical object)",
+          "target": [
+            {
+              "code": "UrostomieSet",
+              "display": "Urostomie-Set",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "34759008",
+          "display": "Urethral catheter, device (physical object)",
+          "target": [
+            {
+              "code": "Harnroehrenkatheter",
+              "display": "Harnröhrenkatheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360041000",
+          "display": "Implanted drug delivery system (physical object)",
+          "target": [
+            {
+              "code": "ImplantiertesArzneimittelabgabesystem",
+              "display": "Implantiertes Arzneimittelabgabesystem",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360046005",
+          "display": "Arterial stent (physical object)",
+          "target": [
+            {
+              "code": "ArteriellerStent",
+              "display": "Arterieller Stent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360058005",
+          "display": "Intraventricular pump (physical object)",
+          "target": [
+            {
+              "code": "IntraventrikulaerePumpe",
+              "display": "Intraventrikuläre Pumpe",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360063009",
+          "display": "Prosthetic cardiac annuloplasty ring (physical object)",
+          "target": [
+            {
+              "code": "ProthesenringfuerdieHerzanuloplastik",
+              "display": "Prothesenring für die Herzanuloplastik",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360070009",
+          "display": "Laryngeal implant (physical object)",
+          "target": [
+            {
+              "code": "Kehlkopfimplantat",
+              "display": "Kehlkopfimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360100007",
+          "display": "Tracheal stent (physical object)",
+          "target": [
+            {
+              "code": "Trachealstent",
+              "display": "Trachealstent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360103009",
+          "display": "Intracochlear prosthesis (physical object)",
+          "target": [
+            {
+              "code": "IntracochleaereProthese",
+              "display": "Intracochleäre Prothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360104003",
+          "display": "Extracochlear prosthesis (physical object)",
+          "target": [
+            {
+              "code": "ExtracochleaereProthese",
+              "display": "Extracochleäre Prothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360117000",
+          "display": "Gastric bubble (physical object)",
+          "target": [
+            {
+              "code": "Magenblase",
+              "display": "Magenblase",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360123005",
+          "display": "Biliary stent (physical object)",
+          "target": [
+            {
+              "code": "Gallenstent",
+              "display": "Gallenstent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360129009",
+          "display": "Cardiac pacemaker lead (physical object)",
+          "target": [
+            {
+              "code": "HerzschrittmacherElektrode",
+              "display": "Herzschrittmacher-Elektrode",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360145006",
+          "display": "Bone prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Knochenprothese",
+              "display": "Knochenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "360329004",
+          "display": "Polyethylene terephthalate graft (physical object)",
+          "target": [
+            {
+              "code": "DacronTransplantat",
+              "display": "Dacron-Transplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "386124003",
+          "display": "Transseptal catheter (physical object)",
+          "target": [
+            {
+              "code": "TransseptalerKatheter",
+              "display": "Transseptaler Katheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "398013009",
+          "display": "Implantable venous access port (physical object)",
+          "target": [
+            {
+              "code": "ImplantierbarervenoeserZugang",
+              "display": "Implantierbarer venöser Zugang",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413766009",
+          "display": "Carotid artery stent (physical object)",
+          "target": [
+            {
+              "code": "Karotisstent",
+              "display": "Karotisstent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "414580007",
+          "display": "Laryngeal keel (physical object)",
+          "target": [
+            {
+              "code": "Kehlkopfkiel",
+              "display": "Kehlkopfkiel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "417136005",
+          "display": "Ileostomy bag (physical object)",
+          "target": [
+            {
+              "code": "IleostomieBeutel",
+              "display": "Ileostomie-Beutel",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "421168009",
+          "display": "Eye sphere implant (physical object)",
+          "target": [
+            {
+              "code": "Augenkugelimplantat",
+              "display": "Augenkugelimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "423449009",
+          "display": "Pulmonary valve prosthesis (physical object)",
+          "target": [
+            {
+              "code": "PulmonalklappenprotheseGeraet",
+              "display": "Pulmonalklappenprothese, Gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "424921004",
+          "display": "Permanent cardiac pacemaker, device (physical object)",
+          "target": [
+            {
+              "code": "PermanenterHerzschrittmacherGeraet",
+              "display": "Permanenter Herzschrittmacher, Gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "429798007",
+          "display": "Artificial vertebral disc (physical object)",
+          "target": [
+            {
+              "code": "KuenstlicheBandscheibe",
+              "display": "Künstliche Bandscheibe",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43252007",
+          "display": "Cochlear prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "CochleaProthese",
+              "display": "Cochlea-Prothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "45633005",
+          "display": "Peritoneal dialyzer, device (physical object)",
+          "target": [
+            {
+              "code": "Peritonealdialysator",
+              "display": "Peritonealdialysator",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "465380004",
+          "display": "Silicone gel-filled breast implant (physical object)",
+          "target": [
+            {
+              "code": "SilikongelgefuelltesBrustimplantat",
+              "display": "Silikongel-gefülltes Brustimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52124006",
+          "display": "Central venous catheter, device (physical object)",
+          "target": [
+            {
+              "code": "ZentralerVenenkatheter",
+              "display": "Zentraler Venenkatheter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "6012004",
+          "display": "Hearing aid, device (physical object)",
+          "target": [
+            {
+              "code": "Hoergeraet",
+              "display": "Hörgerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "63112008",
+          "display": "Bone wire, device (physical object)",
+          "target": [
+            {
+              "code": "Knochendraht",
+              "display": "Knochendraht",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "63289001",
+          "display": "Surgical metal nail, device (physical object)",
+          "target": [
+            {
+              "code": "ChirurgischerMetallnagelGeraet",
+              "display": "Chirurgischer Metallnagel, Gerät",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "65818007",
+          "display": "Stent (physical object)",
+          "target": [
+            {
+              "code": "Stent",
+              "display": "Stent",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "67270000",
+          "display": "Hip prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "Hueftprothese",
+              "display": "Hüftprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "68183006",
+          "display": "Bone screw, device (physical object)",
+          "target": [
+            {
+              "code": "Knochenschraube",
+              "display": "Knochenschraube",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "72506001",
+          "display": "Implantable defibrillator, device (physical object)",
+          "target": [
+            {
+              "code": "ImplantierbarerDefibrillator",
+              "display": "Implantierbarer Defibrillator",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "74444006",
+          "display": "Limb prosthesis, device (physical object)",
+          "target": [
+            {
+              "code": "Extremitaetenprothese",
+              "display": "Extremitätenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "77444004",
+          "display": "Bone pin, device (physical object)",
+          "target": [
+            {
+              "code": "Knochenstift",
+              "display": "Knochenstift",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "77777004",
+          "display": "Bone staple, device (physical object)",
+          "target": [
+            {
+              "code": "Knochenheftklammer",
+              "display": "Knochenheftklammer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "84683006",
+          "display": "Aortic valve prosthesis (physical object)",
+          "target": [
+            {
+              "code": "Aortenklappenprothese",
+              "display": "Aortenklappenprothese",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "90134004",
+          "display": "Metal periosteal implant, device (physical object)",
+          "target": [
+            {
+              "code": "Metallperiostimplantat",
+              "display": "Metallperiostimplantat",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Medical_Product_Information_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "373572006:246090004=404684003:47429007=63653004",
+          "display": "Clinical finding absent (situation) : Associated finding (attribute) = Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object)",
+          "target": [
+            {
+              "code": "InformationenzuMedizinproduktenliegenvor",
+              "display": "Informationen zu Medizinprodukten liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373573001:246090004=404684003:47429007=63653004",
+          "display": "Clinical finding present (situation) : Associated finding (attribute) = Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object)",
+          "target": [
+            {
+              "code": "InformationenzuMedizinproduktenliegenvor",
+              "display": "Informationen zu Medizinprodukten liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=(404684003:47429007=63653004),408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = ( Clinical finding (finding) : Associated with (attribute) = Biomedical device (physical object) ) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "VorliegenvonInformationenzuMedizinproduktenunbekannt",
+              "display": "Vorliegen von Informationen zu Medizinprodukten unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Nutritional_Information_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "373572006:246090004=300893006",
+          "display": "Clinical finding absent (situation) : Associated finding (attribute) = Nutritional finding (finding)",
+          "target": [
+            {
+              "code": "InformationenzurErnaehrungliegennichtvor",
+              "display": "Informationen zur Ernährung liegen nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373573001:246090004=300893006",
+          "display": "Clinical finding present (situation) : Associated finding (attribute) = Nutritional finding (finding)",
+          "target": [
+            {
+              "code": "InformationenzurErnaehrungliegenvor",
+              "display": "Informationen zur Ernährung liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=300893006,408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = Nutritional finding (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "VorliegenvonInformationenzurErnaehrungunbekannt",
+              "display": "Vorliegen von Informationen zur Ernährung unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Person_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "427645006",
+          "display": "Oriented to person (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurPersonvollvorhanden",
+              "display": "Orientierung zur Person voll vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "427645006:363713009=260400001",
+          "display": "Oriented to person (finding) : Has interpretation (attribute) = Reduced (qualifier value)",
+          "target": [
+            {
+              "code": "OrientierungzurPersonteilweisevorhanden",
+              "display": "Orientierung zur Person teilweise vorhanden",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "62766000",
+          "display": "Disorientation for person (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurPersonnichtvorhanden",
+              "display": "Orientierung zur Person nicht vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Place_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "427161009",
+          "display": "Oriented to place (finding)",
+          "target": [
+            {
+              "code": "OrientierungzumOrtvollvorhanden",
+              "display": "Orientierung zum Ort voll vorhanden",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "427161009:363713009=260400001",
+          "display": "Oriented to place (finding) : Has interpretation (attribute) = Reduced (qualifier value)",
+          "target": [
+            {
+              "code": "OrientierungzumOrtteilweisevorhanden",
+              "display": "Orientierung zum Ort teilweise vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "72440003",
+          "display": "Disorientated in place (finding)",
+          "target": [
+            {
+              "code": "OrientierungzumOrtnichtvorhanden",
+              "display": "Orientierung zum Ort nicht vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Situation_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "247663003",
+          "display": "Orientated (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurSituationvollvorhanden",
+              "display": "Orientierung zur Situation voll vorhanden",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "247663003:363713009=260400001",
+          "display": "Orientated (finding) : Has interpretation (attribute) = Reduced (qualifier value)",
+          "target": [
+            {
+              "code": "OrientierungzurSituationteilweisevorhanden",
+              "display": "Orientierung zur Situation teilweise vorhanden",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "62476001+385337002",
+          "display": "Disorientated (finding) + Finding related to ability to comprehend (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurSituationnichtvorhanden",
+              "display": "Orientierung zur Situation nicht vorhanden",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Orientation_Time_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "19657006",
+          "display": "Disorientated in time (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurZeitnichtvorhanden",
+              "display": "Orientierung zur Zeit nicht vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "426794005",
+          "display": "Oriented to time (finding)",
+          "target": [
+            {
+              "code": "OrientierungzurZeitvollvorhanden",
+              "display": "Orientierung zur Zeit voll vorhanden",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "426794005:363713009=260400001",
+          "display": "Oriented to time (finding) : Has interpretation (attribute) = Reduced (qualifier value)",
+          "target": [
+            {
+              "code": "OrientierungzurZeitteilweisevorhanden",
+              "display": "Orientierung zur Zeit teilweise vorhanden",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Pain_Symptom_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "22253000",
+          "display": "Pain (finding)",
+          "target": [
+            {
+              "code": "Schmerzsymptomatikliegtvor",
+              "display": "Schmerzsymptomatik liegt vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=22253000,408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = Pain (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "Schmerzsymptomatikkannnichtausgeschlossenwerden",
+              "display": "Schmerzsymptomatik kann nicht ausgeschlossen werden",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "81765008",
+          "display": "No pain (situation)",
+          "target": [
+            {
+              "code": "Schmerzsymptomatikliegtnichtvor",
+              "display": "Schmerzsymptomatik liegt nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Payment_Exemption_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "184781001",
+          "display": "Has free prescriptions - automatic (finding)",
+          "target": [
+            {
+              "code": "Zuzahlungsbefreiungvorhanden",
+              "display": "Zuzahlungsbefreiung vorhanden",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "308315007:363713009=2667000",
+          "display": "Prescription payment exemption status (finding) : Has interpretation (attribute) = Absent (qualifier value)",
+          "target": [
+            {
+              "code": "Zuzahlungsbefreiungnichtvorhanden",
+              "display": "Zuzahlungsbefreiung nicht vorhanden",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "308315007:363713009=373068000",
+          "display": "Prescription payment exemption status (finding) : Has interpretation (attribute) = Undetermined (qualifier value)",
+          "target": [
+            {
+              "code": "VorhandenseinZuzahlungsbefreiungunbekannt",
+              "display": "Vorhandensein Zuzahlungsbefreiung unbekannt",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Presence_Respiratory_Support_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "106048009:47429007=40617009,363713009=2667000",
+          "display": "Respiratory finding (finding) : Associated with (attribute) = Artificial respiration (procedure) , Has interpretation (attribute) = Absent (qualifier value)",
+          "target": [
+            {
+              "code": "Atmungsunterstuetzungliegtnichtvor",
+              "display": "Atmungsunterstützung liegt nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "106048009:47429007=40617009,363713009=52101004",
+          "display": "Respiratory finding (finding) : Associated with (attribute) = Artificial respiration (procedure) , Has interpretation (attribute) = Present (qualifier value)",
+          "target": [
+            {
+              "code": "Atmungsunterstuetzungliegtvor",
+              "display": "Atmungsunterstützung liegt vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Problem_Presence_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "373572006:246090004=55607006",
+          "display": "Clinical finding absent (situation) : Associated finding (attribute) = Problem (finding)",
+          "target": [
+            {
+              "code": "EsliegenkeineProblemevor",
+              "display": "Es liegen keine Probleme vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373573001:246090004=55607006",
+          "display": "Clinical finding present (situation) : Associated finding (attribute) = Problem (finding)",
+          "target": [
+            {
+              "code": "Problemeliegenvor",
+              "display": "Probleme liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=55607006,408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = Problem (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "VorliegenvonProblemenunbekannt",
+              "display": "Vorliegen von Problemen unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Involvement_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "224483009",
+          "display": "Relatives unable to care for patient (finding)",
+          "target": [
+            {
+              "code": "PflegedurchAngehoerigenichtmoeglich",
+              "display": "Pflege durch Angehörige nicht möglich",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "406546002",
+          "display": "Relatives involved with care (finding)",
+          "target": [
+            {
+              "code": "PflegedurchAngehoerigefindetstatt",
+              "display": "Pflege durch Angehörige findet statt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "406546002:363713009=371150009",
+          "display": "Relatives involved with care (finding) : Has interpretation (attribute) = Able (qualifier value)",
+          "target": [
+            {
+              "code": "PflegedurchAngehoerigemoeglich",
+              "display": "Pflege durch Angehörige möglich",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "406546002:363713009=373068000",
+          "display": "Relatives involved with care (finding) : Has interpretation (attribute) = Undetermined (qualifier value)",
+          "target": [
+            {
+              "code": "PflegedurchAngehoerigeunbekannt",
+              "display": "Pflege durch Angehörige: unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Relatives_Notification_Status_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "129125009:{408731000=410512000,408730004=385660001,363589002=185087000,408732007=444148008}",
+          "display": "Procedure with explicit context (situation) : { Temporal context (attribute) = Current or specified time (qualifier value) , Procedure context (attribute) = Not done (qualifier value) , Associated procedure (attribute) = Notifications (procedure) , Subject relationship context (attribute) = Person in family of subject (person) }",
+          "target": [
+            {
+              "code": "BenachrichtigungvonAnZugehoerigennichterfolgt",
+              "display": "Benachrichtigung von An-/Zugehörigen nicht erfolgt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "129125009:{408731000=410512000,408730004=410537005,363589002=185087000,408732007=444148008}",
+          "display": "Procedure with explicit context (situation) : { Temporal context (attribute) = Current or specified time (qualifier value) , Procedure context (attribute) = Action status unknown (qualifier value) , Associated procedure (attribute) = Notifications (procedure) , Subject relationship context (attribute) = Person in family of subject (person) }",
+          "target": [
+            {
+              "code": "BenachrichtigungsstatusvonAnZugehoerigenunbekannt",
+              "display": "Benachrichtigungsstatus von An-/Zugehörigen unbekannt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "418404007",
+          "display": "Family notified (situation)",
+          "target": [
+            {
+              "code": "BenachrichtigungvonAnZugehoerigenerfolgt",
+              "display": "Benachrichtigung von An-/Zugehörigen erfolgt",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Respiratory_Access_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "302108003",
+          "display": "Tracheostomy present (finding)",
+          "target": [
+            {
+              "code": "Tracheostoma",
+              "display": "Tracheostoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "366141005",
+          "display": "Finding of route of breathing (finding)",
+          "target": [
+            {
+              "code": "AndereArtderLuftleitung",
+              "display": "Andere Art der Luftleitung",
+              "equivalence": "wider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "129839007",
+          "display": "At risk for falls (finding)",
+          "target": [
+            {
+              "code": "Sturzrisiko",
+              "display": "Sturzrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "129845004",
+          "display": "At risk for imbalanced nutrition, less than body requirements (finding)",
+          "target": [
+            {
+              "code": "Mangelernaehrungsrisiko",
+              "display": "Mangelernährungsrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "281694009+111360009",
+          "display": "Finding of at risk (finding) + Obstipation (disorder)",
+          "target": [
+            {
+              "code": "Obstipationsrisiko",
+              "display": "Obstipationsrisiko",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "281694009+233604007",
+          "display": "Finding of at risk (finding) + Pneumonia (disorder)",
+          "target": [
+            {
+              "code": "Pneumonierisiko",
+              "display": "Pneumonierisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "281694009+48340000",
+          "display": "Finding of at risk (finding) + Incontinence (finding)",
+          "target": [
+            {
+              "code": "Inkontinenzrisiko",
+              "display": "Inkontinenzrisiko",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "285304000",
+          "display": "At risk of pressure ulcer (finding)",
+          "target": [
+            {
+              "code": "Dekubitusrisiko",
+              "display": "Dekubitusrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "371736008",
+          "display": "At risk for aspiration (finding)",
+          "target": [
+            {
+              "code": "Aspirationsrisiko",
+              "display": "Aspirationsrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "427631000",
+          "display": "At risk of venous thromboembolus (finding)",
+          "target": [
+            {
+              "code": "Thromboserisiko",
+              "display": "Thromboserisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "67722007",
+          "display": "At risk for joint contractures (finding)",
+          "target": [
+            {
+              "code": "Kontrakturrisiko",
+              "display": "Kontrakturrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "704420006",
+          "display": "At risk of dehydration (finding)",
+          "target": [
+            {
+              "code": "Dehydratationsrisiko",
+              "display": "Dehydratationsrisiko",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "704448006",
+          "display": "Tendency to wander (finding)",
+          "target": [
+            {
+              "code": "Hinlaufgefaehrdung",
+              "display": "Hinlaufgefährdung",
+              "equivalence": "wider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Risk_Presence_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "373572006:246090004=281694009",
+          "display": "Clinical finding absent (situation) : Associated finding (attribute) = Finding of at risk (finding)",
+          "target": [
+            {
+              "code": "Risikenliegennichtvor",
+              "display": "Risiken liegen nicht vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "373573001:246090004=281694009",
+          "display": "Clinical finding present (situation) : Associated finding (attribute) = Finding of at risk (finding)",
+          "target": [
+            {
+              "code": "Risikenliegenvor",
+              "display": "Risiken liegen vor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "413350009:{246090004=281694009,408729009=261665006,408732007=410604004,408731000=410512000}",
+          "display": "Finding with explicit context (situation) : { Associated finding (attribute) = Finding of at risk (finding) , Finding context (attribute) = Unknown (qualifier value) , Subject relationship context (attribute) = Subject of record (person) , Temporal context (attribute) = Current or specified time (qualifier value) }",
+          "target": [
+            {
+              "code": "VorliegenvonRisikenunbekannt",
+              "display": "Vorliegen von Risiken unbekannt",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "sourceVersion": "http://snomed.info/sct/900000000000207008/version/20220331",
+      "target": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Type_Of_Facility_German",
+      "targetVersion": "1.0.0",
+      "element": [
+        {
+          "code": "1179644005",
+          "display": "Residential home for disabled people (environment)",
+          "target": [
+            {
+              "code": "EinrichtungderEingliederungshilfe",
+              "display": "Einrichtung der Eingliederungshilfe",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "22232009",
+          "display": "Hospital (environment)",
+          "target": [
+            {
+              "code": "Krankenhaus",
+              "display": "Krankenhaus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "284546000",
+          "display": "Hospice (environment)",
+          "target": [
+            {
+              "code": "Hospiz",
+              "display": "Hospiz",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42665001",
+          "display": "Nursing home (environment)",
+          "target": [
+            {
+              "code": "EinrichtungderstationaerenLangzeitpflege",
+              "display": "Einrichtung der stationären Langzeitpflege",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43741000",
+          "display": "Site of care (environment)",
+          "target": [
+            {
+              "code": "AndererEinrichtungstyp",
+              "display": "Anderer Einrichtungstyp",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "66280005",
+          "display": "Private home-based care (environment)",
+          "target": [
+            {
+              "code": "AmbulanterPflegedienst",
+              "display": "Ambulanter Pflegedienst",
+              "equivalence": "inexact",
+              "comment": "TBD"
+            }
+          ]
+        },
+        {
+          "code": "702916001",
+          "display": "Rehabilitation clinic (environment)",
+          "target": [
+            {
+              "code": "Rehabilitationseinrichtung",
+              "display": "Rehabilitationseinrichtung",
+              "equivalence": "narrower",
+              "comment": "TBD"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

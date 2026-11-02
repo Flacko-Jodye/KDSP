@@ -1,0 +1,5664 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_Composition",
+  "title": "KBV_PR_MIO_ULB_Composition",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil bündelt alle Informationen des Überleitungsbogens.",
+  "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, ALpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "definition": "Dieses Profil bündelt alle Informationen des Pflegeüberleitungsbogens.",
+        "constraint": [
+          {
+            "key": "date-1",
+            "severity": "error",
+            "human": "Datetime must be at least day, month and year.",
+            "expression": "(date as dateTime).toString().length() >= 10",
+            "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition"
+          }
+        ]
+      },
+      {
+        "id": "Composition.meta",
+        "path": "Composition.meta",
+        "min": 1
+      },
+      {
+        "id": "Composition.meta.versionId",
+        "path": "Composition.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Composition.meta.lastUpdated",
+        "path": "Composition.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "Composition.meta.source",
+        "path": "Composition.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Composition.meta.profile",
+        "path": "Composition.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition|1.0.0"
+      },
+      {
+        "id": "Composition.meta.security",
+        "path": "Composition.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Composition.meta.tag",
+        "path": "Composition.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Composition.implicitRules",
+        "path": "Composition.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Composition.language",
+        "path": "Composition.language",
+        "max": "0"
+      },
+      {
+        "id": "Composition.text",
+        "path": "Composition.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Composition.text.status",
+        "path": "Composition.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "Composition.contained",
+        "path": "Composition.contained",
+        "max": "0"
+      },
+      {
+        "id": "Composition.extension",
+        "path": "Composition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Composition.extension:empfangendeEinrichtung",
+        "path": "Composition.extension",
+        "sliceName": "empfangendeEinrichtung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Receiving_Institution"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false
+      },
+      {
+        "id": "Composition.extension:empfangendeEinrichtung.value[x]",
+        "path": "Composition.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.extension:empfangendeEinrichtung.value[x]:valueReference",
+        "path": "Composition.extension.value[x]",
+        "sliceName": "valueReference",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.extension:empfangendeEinrichtung.value[x]:valueReference.reference",
+        "path": "Composition.extension.value[x].reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.identifier",
+        "path": "Composition.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "patternCode": "final"
+      },
+      {
+        "id": "Composition.type",
+        "path": "Composition.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "721919000",
+          "display": "Nurse discharge summary (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.type.coding.system",
+        "path": "Composition.type.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding.version",
+        "path": "Composition.type.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding.code",
+        "path": "Composition.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding.display",
+        "path": "Composition.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding.userSelected",
+        "path": "Composition.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.type.text",
+        "path": "Composition.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "max": "0"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.subject.reference",
+        "path": "Composition.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.subject.type",
+        "path": "Composition.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.subject.identifier",
+        "path": "Composition.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.subject.display",
+        "path": "Composition.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.encounter",
+        "path": "Composition.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Composition.date",
+        "path": "Composition.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author",
+        "path": "Composition.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author.reference",
+        "path": "Composition.author.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.author.type",
+        "path": "Composition.author.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.author.identifier",
+        "path": "Composition.author.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.author.display",
+        "path": "Composition.author.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.title",
+        "path": "Composition.title",
+        "patternString": "Überleitungsbogen"
+      },
+      {
+        "id": "Composition.confidentiality",
+        "path": "Composition.confidentiality",
+        "max": "0"
+      },
+      {
+        "id": "Composition.attester",
+        "path": "Composition.attester",
+        "max": "0"
+      },
+      {
+        "id": "Composition.custodian",
+        "path": "Composition.custodian",
+        "max": "0"
+      },
+      {
+        "id": "Composition.relatesTo",
+        "path": "Composition.relatesTo",
+        "max": "0"
+      },
+      {
+        "id": "Composition.event",
+        "path": "Composition.event",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch",
+        "path": "Composition.section",
+        "sliceName": "patientenAdressbuch",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.title",
+        "path": "Composition.section.title",
+        "patternString": "Patienten-Adressbuch",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Address_Book",
+          "version": "1.0.0",
+          "code": "Kontakt_und_behandelnde_Personen",
+          "display": "Kontakt- und behandelnde Personen"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CareTeam|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenAdressbuch.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad",
+        "path": "Composition.section",
+        "sliceName": "pflegegrad",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Pflegegrad",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Section_Codes",
+          "version": "1.0.0",
+          "code": "SectionPflegegrad",
+          "display": "Bereich Pflegegrad"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegegrad.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegegrad.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung",
+        "path": "Composition.section",
+        "sliceName": "gradDerBehinderung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Grad der Behinderung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704326004=21134002",
+          "display": "Observable entity (observable entity) : Precondition (attribute) = Disability (finding)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability_Available|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:gradDerBehinderung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige",
+        "path": "Composition.section",
+        "sliceName": "pflegeDurchAngehoerige",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Pflege durch Angehörige",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "405204003",
+          "display": "Family involvement behavior : health care (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_By_Relatives|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegeDurchAngehoerige.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen",
+        "path": "Composition.section",
+        "sliceName": "benachrichtigungVonAn-undZugehoerigen",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Benachrichtigung von An- und Zugehörigen",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "302160007:704321009=(185087000:370131001=35359004)",
+          "display": "Household, family and support network detail (observable entity) : Characterizes (attribute) = ( Notifications (procedure) : Recipient category (attribute) = Family (social concept) )"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relatives_Notified|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:benachrichtigungVonAn-undZugehoerigen.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte",
+        "path": "Composition.section",
+        "sliceName": "mitgabeKrankenkassenkarte",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Mitgabe der Krankenkassenkarte",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Health_Insurance_Card",
+          "version": "1.0.0",
+          "code": "krankenkassenkarte_mitgegeben",
+          "display": "Krankenkassenkarte mitgegeben"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Health_Insurance_Card_Given|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgabeKrankenkassenkarte.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung",
+        "path": "Composition.section",
+        "sliceName": "zuzahlungsbefreiung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Zuzahlungsbefreiung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704326004=308315007",
+          "display": "Observable entity (observable entity) : Precondition (attribute) = Prescription payment exemption status (finding)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Copayment_Exemption|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zuzahlungsbefreiung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt",
+        "path": "Composition.section",
+        "sliceName": "krankenhausaufenthalt",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Krankenhausaufenthalt",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "170551006",
+          "display": "Last hospital inpatient (finding)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Hospital_Stay|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:krankenhausaufenthalt.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung",
+        "path": "Composition.section",
+        "sliceName": "persoenlicheErklaerungenGesetzlicheBetreuung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Persönliche Erklärungen / Gesetzliche Betreuung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "224329005",
+          "display": "Legal affairs and legal constraints (observable entity)"
+        }
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry",
+        "path": "Composition.section.entry",
+        "definition": "A reference to th e actual resource from which the narrative in the section is derived.",
+        "max": "2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Personal_Statements|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Legal_Care|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:persoenlicheErklaerungenGesetzlicheBetreuung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen",
+        "path": "Composition.section",
+        "sliceName": "relevanteInformationsquellen",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Relevante Informationsquellen",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "version": "2.72",
+          "code": "48766-0",
+          "display": "Information source"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:relevanteInformationsquellen.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar",
+        "path": "Composition.section",
+        "sliceName": "kommentar",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Freitext Kommentar",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "703852005",
+          "display": "Narrative comment section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:kommentar.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Comment|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:kommentar.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:kommentar.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende",
+        "path": "Composition.section",
+        "sliceName": "mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Mitgegebene Dokumente / Arzneimittel / Hilfsmittel / Gegenstände",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704326004=(404684003:47429007=49062001,363713009=52101004)",
+          "display": "Observable entity (observable entity) : Precondition (attribute) = (Clinical finding (finding): Associated with (attribute) = Device (physical object) , Has interpretation (attribute) = Present (qualifier value) )"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Medication|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Other_Item|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:mitgegebeneDokumenteArzneimittelHilfsmittelGegenstaende.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme",
+        "path": "Composition.section",
+        "sliceName": "probleme",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:probleme.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Probleme",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:probleme.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:probleme.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "1184595009",
+          "display": "Present problem document section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:probleme.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:probleme.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:probleme.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:probleme.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:probleme.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Problems|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:probleme.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:probleme.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:probleme.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken",
+        "path": "Composition.section",
+        "sliceName": "risiken",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Risiken",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "version": "2.72",
+          "code": "75456-4",
+          "display": "Nurse Risk assessment and screening note"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:risiken.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:risiken.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:risiken.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:risiken.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Risks|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:risiken.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:risiken.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik",
+        "path": "Composition.section",
+        "sliceName": "schmerzsymptomatik",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Schmerzsymptomatik",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "406189006",
+          "display": "Pain observable (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:schmerzsymptomatik.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung",
+        "path": "Composition.section",
+        "sliceName": "ernaehrung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:ernaehrung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Ernährung"
+      },
+      {
+        "id": "Composition.section:ernaehrung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "version": "2.72",
+          "code": "34801-1",
+          "display": "Nutrition and dietetics Note"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Information_Nutrition|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:ernaehrung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:ernaehrung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:ernaehrung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation",
+        "path": "Composition.section",
+        "sliceName": "raeumlicheIsolation",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Notwendigkeit der räumlichen Isoation",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704321009=40174006",
+          "display": "Observable entity (observable entity) : Characterizes (attribute) = Isolation procedure (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Isolation_Necessary|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:raeumlicheIsolation.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen",
+        "path": "Composition.section",
+        "sliceName": "funktionsbeurteilungen",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Funktionsbeurteilungen",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "1184588000",
+          "display": "Functional status document section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Functional_Assessment|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:funktionsbeurteilungen.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte",
+        "path": "Composition.section",
+        "sliceName": "medizinprodukte",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Medizinprodukte",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "1184586001",
+          "display": "Medical device document section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Relevant_Information_Medical_Devices|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medizinprodukte.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medizinprodukte.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten",
+        "path": "Composition.section",
+        "sliceName": "allergienUndUnvertraeglichkeiten",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Allergien und Unverträglichkeiten",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "722446000",
+          "display": "Allergy record (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Presence_Allergies|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:allergienUndUnvertraeglichkeiten.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan",
+        "path": "Composition.section",
+        "sliceName": "medikationsplan",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Medikationsplan",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "736378000",
+          "display": "Medication management plan (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Information_Medicines|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:medikationsplan.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:medikationsplan.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche",
+        "path": "Composition.section",
+        "sliceName": "orientierungPsyche",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Orientierung / Psyche",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "43173001+312012004",
+          "display": "Orientation , function (observable entity) + Cognitive function : awareness (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:orientierungPsyche.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter",
+        "path": "Composition.section",
+        "sliceName": "vitalparameter",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Vitalzeichen und Körpermaße",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "1184593002",
+          "display": "Vital sign document section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DiagnosticReport_Vital_Signs_and_Body_Measures|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:vitalparameter.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:vitalparameter.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung",
+        "path": "Composition.section",
+        "sliceName": "empfehlung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Empfehung an die empfangende Einrichtung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "406216001",
+          "display": "Recommendation to caregiver (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:empfehlung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_CarePlan_Recommendation_Receiving_Institution|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:empfehlung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:empfehlung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme",
+        "path": "Composition.section",
+        "sliceName": "pflegerischeMassnahme",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Pflegerische Maßnahme",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "9632001",
+          "display": "Nursing procedure (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:pflegerischeMassnahme.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten",
+        "path": "Composition.section",
+        "sliceName": "auffaelligesVerhalten",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Auffälliges Verhalten",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363896009:704326004=25786006",
+          "display": "Behavior observable (observable entity) : Precondition (attribute) = Abnormal behavior (finding)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:auffaelligesVerhalten.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen",
+        "path": "Composition.section",
+        "sliceName": "freiheitsentziehendeMassnahmen",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Freiheitsentziehende Maßnahmen",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704321009=225214000",
+          "display": "Observable entity (observable entity) : Characterizes (attribute) = Procedures relating to control, restraint, seclusion and segregation (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.entry",
+        "path": "Composition.section.entry",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freiheitsentziehendeMassnahmen.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung",
+        "path": "Composition.section",
+        "sliceName": "qualitativeBeschreibungAtmung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Qualitative Beschreibung der Atmung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "78064003:370132008=26716007",
+          "display": "Respiratory function (observable entity) : Scale type (attribute) = Qualitative (qualifier value)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:qualitativeBeschreibungAtmung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung",
+        "path": "Composition.section",
+        "sliceName": "freitextAnEmpfangendeEinrichtung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Freitext Nachricht an die empfangende Einrichtung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "721927009",
+          "display": "Referral note (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Message_Receiving_Institution|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:freitextAnEmpfangendeEinrichtung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate",
+        "path": "Composition.section",
+        "sliceName": "anzahlStuerzeLetzte6Monate",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Anzahl der Stürze in den letzten 6 Monaten",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "391002003:704323007=88561007",
+          "display": "Number of falls in last year (observable entity) : Process duration (attribute) = Semi-annual (qualifier value)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:anzahlStuerzeLetzte6Monate.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang",
+        "path": "Composition.section",
+        "sliceName": "atemwegszugang",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Atemwegszugang",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "313292002",
+          "display": "Route of breathing (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atemwegszugang.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atemwegszugang.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung",
+        "path": "Composition.section",
+        "sliceName": "atmungsunterstuetzung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Atmungsunterstützung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704321009=40617009",
+          "display": "Observable entity (observable entity) : Characterizes (attribute) = Artificial respiration (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:atmungsunterstuetzung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung",
+        "path": "Composition.section",
+        "sliceName": "harnkontinenzDifferenzierteEinschaetzung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Harnkontinenz differenzierte Einschätzung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "129009001",
+          "display": "Bladder control, function (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnkontinenzDifferenzierteEinschaetzung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung",
+        "path": "Composition.section",
+        "sliceName": "harnableitung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnableitung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Harnableitung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnableitung.code",
+        "path": "Composition.section.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "406219008",
+          "display": "Urinary elimination status (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:harnableitung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnableitung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:harnableitung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:harnableitung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion",
+        "path": "Composition.section",
+        "sliceName": "zeitpunktLetzteMiktion",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Zeitpunkt der letzten Miktion",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "364201005:370134009=57615005",
+          "display": "Urine output observable (observable entity) : Time aspect (attribute) = Definite time (qualifier value)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Micturition|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzteMiktion.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung",
+        "path": "Composition.section",
+        "sliceName": "stuhlkontinenzDifferenzierteEinschaetzung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Stuhlkontinenz differenzierte Einschätzung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "16490003",
+          "display": "Anorectal continence, function (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlkontinenzDifferenzierteEinschaetzung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung",
+        "path": "Composition.section",
+        "sliceName": "stuhlableitung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Stuhlableitung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "363787002:704321009=266683002",
+          "display": "Observable entity (observable entity) : Characterizes (attribute) = Evacuation of gastrointestinal tract contents (procedure)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:stuhlableitung.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:stuhlableitung.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang",
+        "path": "Composition.section",
+        "sliceName": "zeitpunktLetzterStuhlgang",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Zeitpunkt des letzten Stuhlgangs",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "364171004:370134009=57615005",
+          "display": "Defecation observable (observable entity) : Time aspect (attribute) = Definite time (qualifier value)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Last_Bowel_Movement|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:zeitpunktLetzterStuhlgang.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch",
+        "path": "Composition.section",
+        "sliceName": "patientenwunsch",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Patientenwunsch",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "1186606009",
+          "display": "Patient request observable (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:patientenwunsch.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:patientenwunsch.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei",
+        "path": "Composition.section",
+        "sliceName": "assessmentFrei",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "patternString": "Assessment - frei / Beobachtung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "424836000",
+          "display": "Assessment section (record artifact)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.coding.userSelected",
+        "path": "Composition.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.code.text",
+        "path": "Composition.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.author",
+        "path": "Composition.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.focus",
+        "path": "Composition.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.text",
+        "path": "Composition.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.mode",
+        "path": "Composition.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.orderedBy",
+        "path": "Composition.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.entry.reference",
+        "path": "Composition.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:assessmentFrei.entry.type",
+        "path": "Composition.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.entry.identifier",
+        "path": "Composition.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.entry.display",
+        "path": "Composition.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.emptyReason",
+        "path": "Composition.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:assessmentFrei.section",
+        "path": "Composition.section.section",
+        "max": "0"
+      }
+    ]
+  }
+}

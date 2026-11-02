@@ -1,0 +1,82 @@
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+  .app-header,
+  .main-nav,
+  .onboarding,
+  .app-footer,
+  .no-print,
+  .modal,
+  .error-banner {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 10px !important;
+  }
+  .module {
+    padding: 0 !important;
+  }
+  .section-title h1 {
+    font-size: 25px !important;
+  }
+  .stats-grid {
+    gap: 10px !important;
+    margin: 14px 0 !important;
+  }
+  .stat {
+    padding: 12px !important;
+  }
+  .stat strong {
+    font-size: 25px !important;
+  }
+  .stat-bar {
+    display: none;
+  }
+  .table-scroll {
+    overflow: visible !important;
+    border: 0 !important;
+  }
+  table {
+    font-size: 9px !important;
+    table-layout: fixed;
+  }
+  th,
+  td {
+    padding: 7px !important;
+    min-width: 0 !important;
+    overflow-wrap: anywhere;
+  }
+  td:first-child {
+    min-width: 0 !important;
+  }
+  .source-cell {
+    font-size: 8px !important;
+  }
+  .export-id {
+    font-size: 7px !important;
+  }
+  .text-button {
+    color: black !important;
+  }
+  tr,
+  .stat,
+  .print-processes article > div {
+    break-inside: avoid;
+  }
+  .print-processes {
+    break-before: page;
+  }
+  .notice {
+    font-size: 10px !important;
+  }
+  .result-summary {
+    gap: 16px !important;
+  }
+  .results > p {
+    font-size: 10px !important;
+  }
+}

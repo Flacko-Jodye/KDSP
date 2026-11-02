@@ -1,0 +1,553 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable",
+  "version": "1.0.0",
+  "name": "KBV_EX_MIO_ULB_Timetable",
+  "title": "KBV_EX_MIO_ULB_Timetable",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Diese Extension bildet den Zeitplan für eine pflegerische Maßnahme ab.",
+  "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Procedure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Diese Extension bildet den Zeitplan für eine pflegerische Maßnahme ab."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:codeSnomed",
+        "path": "Extension.extension",
+        "sliceName": "codeSnomed",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:codeSnomed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "codeSnomed"
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding",
+        "path": "Extension.extension.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+          "code": "364713004",
+          "display": "Temporal observable (observable entity)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding.version",
+        "path": "Extension.extension.value[x].coding.version",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding.display",
+        "path": "Extension.extension.value[x].coding.display",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.coding.userSelected",
+        "path": "Extension.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:codeSnomed.value[x]:valueCodeableConcept.text",
+        "path": "Extension.extension.value[x].text",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert",
+        "path": "Extension.extension",
+        "sliceName": "angabeStrukturiert",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer",
+        "path": "Extension.extension.extension",
+        "sliceName": "dauer",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "dauer"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity.value",
+        "path": "Extension.extension.extension.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity.comparator",
+        "path": "Extension.extension.extension.value[x].comparator",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity.unit",
+        "path": "Extension.extension.extension.value[x].unit",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity.system",
+        "path": "Extension.extension.extension.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:dauer.value[x]:valueQuantity.code",
+        "path": "Extension.extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz",
+        "path": "Extension.extension.extension",
+        "sliceName": "frequenz",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "frequenz"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueTiming",
+        "min": 1,
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.event",
+        "path": "Extension.extension.extension.value[x].event",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat",
+        "path": "Extension.extension.extension.value[x].repeat",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.bounds[x]",
+        "path": "Extension.extension.extension.value[x].repeat.bounds[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.count",
+        "path": "Extension.extension.extension.value[x].repeat.count",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.countMax",
+        "path": "Extension.extension.extension.value[x].repeat.countMax",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.duration",
+        "path": "Extension.extension.extension.value[x].repeat.duration",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.durationMax",
+        "path": "Extension.extension.extension.value[x].repeat.durationMax",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.durationUnit",
+        "path": "Extension.extension.extension.value[x].repeat.durationUnit",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.frequency",
+        "path": "Extension.extension.extension.value[x].repeat.frequency",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.frequencyMax",
+        "path": "Extension.extension.extension.value[x].repeat.frequencyMax",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.period",
+        "path": "Extension.extension.extension.value[x].repeat.period",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.periodMax",
+        "path": "Extension.extension.extension.value[x].repeat.periodMax",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.periodUnit",
+        "path": "Extension.extension.extension.value[x].repeat.periodUnit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.dayOfWeek",
+        "path": "Extension.extension.extension.value[x].repeat.dayOfWeek",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.timeOfDay",
+        "path": "Extension.extension.extension.value[x].repeat.timeOfDay",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.when",
+        "path": "Extension.extension.extension.value[x].repeat.when",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.repeat.offset",
+        "path": "Extension.extension.extension.value[x].repeat.offset",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:frequenz.value[x]:valueTiming.code",
+        "path": "Extension.extension.extension.value[x].code",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt",
+        "path": "Extension.extension.extension",
+        "sliceName": "zeitpunkt",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "zeitpunkt"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "time"
+          },
+          {
+            "code": "Timing"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueTiming",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.event",
+        "path": "Extension.extension.extension.value[x].event",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.repeat",
+        "path": "Extension.extension.extension.value[x].repeat",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code",
+        "path": "Extension.extension.extension.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding",
+        "path": "Extension.extension.extension.value[x].code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Event_Timing|1.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding.system",
+        "path": "Extension.extension.extension.value[x].code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding.version",
+        "path": "Extension.extension.extension.value[x].code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding.code",
+        "path": "Extension.extension.extension.value[x].code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding.display",
+        "path": "Extension.extension.extension.value[x].code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.coding.userSelected",
+        "path": "Extension.extension.extension.value[x].code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTiming.code.text",
+        "path": "Extension.extension.extension.value[x].code.text",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.extension:zeitpunkt.value[x]:valueTime",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueTime",
+        "type": [
+          {
+            "code": "time"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "angabeStrukturiert"
+      },
+      {
+        "id": "Extension.extension:angabeStrukturiert.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:angabeFreitext",
+        "path": "Extension.extension",
+        "sliceName": "angabeFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeFreitext.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "angabeFreitext"
+      },
+      {
+        "id": "Extension.extension:angabeFreitext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:angabeFreitext.value[x]:valueString",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueString",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

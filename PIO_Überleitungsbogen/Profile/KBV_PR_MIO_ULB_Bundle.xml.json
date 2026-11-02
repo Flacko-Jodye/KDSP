@@ -1,0 +1,187 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_Bundle",
+  "title": "KBV_PR_MIO_ULB_Bundle",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung den vollständigen Überleitungsbogen.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "definition": "Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung den vollständigen Pflegeüberleitungsbogen.",
+        "constraint": [
+          {
+            "key": "TypeComposition",
+            "severity": "error",
+            "human": "Es muss genau eine Composition enthalten sein",
+            "expression": "entry.where(resource.meta.profile='https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Composition|1.0.0').count()=1",
+            "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle"
+          },
+          {
+            "key": "OneComposition",
+            "severity": "error",
+            "human": "Es darf genau eine Composition geben",
+            "expression": "entry.select(resource as Composition).count()=1",
+            "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.meta",
+        "path": "Bundle.meta",
+        "min": 1
+      },
+      {
+        "id": "Bundle.meta.versionId",
+        "path": "Bundle.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.meta.lastUpdated",
+        "path": "Bundle.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.meta.source",
+        "path": "Bundle.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.meta.profile",
+        "path": "Bundle.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Bundle|1.0.0"
+      },
+      {
+        "id": "Bundle.meta.security",
+        "path": "Bundle.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.meta.tag",
+        "path": "Bundle.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.implicitRules",
+        "path": "Bundle.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.language",
+        "path": "Bundle.language",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.identifier",
+        "path": "Bundle.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.identifier.use",
+        "path": "Bundle.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.identifier.type",
+        "path": "Bundle.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.identifier.system",
+        "path": "Bundle.identifier.system",
+        "min": 1,
+        "patternUri": "urn:ietf:rfc:3986"
+      },
+      {
+        "id": "Bundle.identifier.value",
+        "path": "Bundle.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Bundle.identifier.period",
+        "path": "Bundle.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.identifier.assigner",
+        "path": "Bundle.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "patternCode": "document",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "min": 1
+      },
+      {
+        "id": "Bundle.total",
+        "path": "Bundle.total",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.link",
+        "path": "Bundle.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.link",
+        "path": "Bundle.entry.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.signature",
+        "path": "Bundle.signature",
+        "max": "0"
+      }
+    ]
+  }
+}

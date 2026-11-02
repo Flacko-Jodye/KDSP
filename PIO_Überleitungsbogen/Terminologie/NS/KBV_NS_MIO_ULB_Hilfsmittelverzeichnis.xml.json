@@ -1,0 +1,39 @@
+{
+  "resourceType": "NamingSystem",
+  "meta": {
+    "profile": [
+      "http://fhir.de/StructureDefinition/namingsystem-de-basis"
+    ]
+  },
+  "name": "KBV_NS_MIO_ULB_Hilfsmittelverzeichnis",
+  "status": "active",
+  "kind": "codesystem",
+  "date": "2022-08-01",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.kbv.de"
+        }
+      ]
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_ULB_Identifier_Types",
+        "code": "GKV"
+      }
+    ]
+  },
+  "description": "Das NamingSystem dient der Abbildung des GKV-Hilfsmittelkatalog.",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://fhir.kbv.de/NamingSystem/KBV_NS_MIO_ULB_Hilfsmittelverzeichnis",
+      "preferred": true
+    }
+  ]
+}

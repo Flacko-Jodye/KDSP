@@ -1,0 +1,479 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Current_Location",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_Encounter_Current_Location",
+  "title": "KBV_PR_MIO_ULB_Encounter_Current_Location",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil bildet den aktuellen Aufenthaltsort ab.",
+  "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter",
+        "path": "Encounter",
+        "definition": "Dieses Profil bildet den aktuellen Aufenthalsort ab.",
+        "constraint": [
+          {
+            "key": "enc-1",
+            "severity": "error",
+            "human": "Wenn type.coding.code = \"anderes Wohnverhältnis\" muss type.text vorhanden sein",
+            "expression": "((Encounter.type.exists and Encounter.type.coding.code='365481000') implies (Encounter.type.text).exists()) or ((Encounter.type.exists().not()) implies (Encouter.type.coding.exists().not() and Encounter.type.exists().not()))",
+            "source": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Current_Location"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.meta",
+        "path": "Encounter.meta",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.versionId",
+        "path": "Encounter.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.meta.lastUpdated",
+        "path": "Encounter.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.meta.source",
+        "path": "Encounter.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.meta.profile",
+        "path": "Encounter.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Encounter_Current_Location|1.0.0"
+      },
+      {
+        "id": "Encounter.meta.security",
+        "path": "Encounter.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.meta.tag",
+        "path": "Encounter.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.implicitRules",
+        "path": "Encounter.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.language",
+        "path": "Encounter.language",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.text",
+        "path": "Encounter.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Encounter.text.status",
+        "path": "Encounter.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "Encounter.contained",
+        "path": "Encounter.contained",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.extension",
+        "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Encounter.extension:empfehlung",
+        "path": "Encounter.extension",
+        "sliceName": "empfehlung",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Recommendation_Receiving_Institution"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.extension:empfehlung.value[x]",
+        "path": "Encounter.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.extension:empfehlung.value[x]:valueReference",
+        "path": "Encounter.extension.value[x]",
+        "sliceName": "valueReference",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.extension:empfehlung.value[x]:valueReference.reference",
+        "path": "Encounter.extension.value[x].reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "patternCode": "finished"
+      },
+      {
+        "id": "Encounter.statusHistory",
+        "path": "Encounter.statusHistory",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Residence_Status|1.0.0"
+        }
+      },
+      {
+        "id": "Encounter.class.system",
+        "path": "Encounter.class.system",
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.version",
+        "path": "Encounter.class.version",
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.code",
+        "path": "Encounter.class.code",
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.display",
+        "path": "Encounter.class.display",
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.userSelected",
+        "path": "Encounter.class.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.classHistory",
+        "path": "Encounter.classHistory",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Living_Condition|1.0.0"
+        }
+      },
+      {
+        "id": "Encounter.type.coding",
+        "path": "Encounter.type.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.type.coding.system",
+        "path": "Encounter.type.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Encounter.type.coding.version",
+        "path": "Encounter.type.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Encounter.type.coding.code",
+        "path": "Encounter.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Encounter.type.coding.display",
+        "path": "Encounter.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Encounter.type.coding.userSelected",
+        "path": "Encounter.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.type.text",
+        "path": "Encounter.type.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.serviceType",
+        "path": "Encounter.serviceType",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.priority",
+        "path": "Encounter.priority",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.subject.reference",
+        "path": "Encounter.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.subject.type",
+        "path": "Encounter.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.subject.identifier",
+        "path": "Encounter.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.subject.display",
+        "path": "Encounter.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.episodeOfCare",
+        "path": "Encounter.episodeOfCare",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.basedOn",
+        "path": "Encounter.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.type",
+        "path": "Encounter.participant.type",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.type.coding",
+        "path": "Encounter.participant.type.coding",
+        "short": "Fixed Code um festzulegen, dass es sich um eine Kontaktperson handelt.",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+          "version": "3.0.0",
+          "code": "CALLBCK",
+          "display": "callback contact"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.type.coding.system",
+        "path": "Encounter.participant.type.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Encounter.participant.type.coding.version",
+        "path": "Encounter.participant.type.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Encounter.participant.type.coding.code",
+        "path": "Encounter.participant.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Encounter.participant.type.coding.display",
+        "path": "Encounter.participant.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Encounter.participant.type.coding.userSelected",
+        "path": "Encounter.participant.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant.type.text",
+        "path": "Encounter.participant.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant.period",
+        "path": "Encounter.participant.period",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_RelatedPerson_Contact_Person|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.individual.reference",
+        "path": "Encounter.participant.individual.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.individual.type",
+        "path": "Encounter.participant.individual.type",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant.individual.identifier",
+        "path": "Encounter.participant.individual.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant.individual.display",
+        "path": "Encounter.participant.individual.display",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.appointment",
+        "path": "Encounter.appointment",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.length",
+        "path": "Encounter.length",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.reasonReference",
+        "path": "Encounter.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.diagnosis",
+        "path": "Encounter.diagnosis",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.account",
+        "path": "Encounter.account",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.hospitalization",
+        "path": "Encounter.hospitalization",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.location",
+        "path": "Encounter.location",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.serviceProvider.reference",
+        "path": "Encounter.serviceProvider.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.serviceProvider.type",
+        "path": "Encounter.serviceProvider.type",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.serviceProvider.identifier",
+        "path": "Encounter.serviceProvider.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.serviceProvider.display",
+        "path": "Encounter.serviceProvider.display",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "max": "0"
+      }
+    ]
+  }
+}

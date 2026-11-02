@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member",
+  "version": "1.0.0",
+  "name": "KBV_EX_MIO_ULB_Reference_Has_Member",
+  "title": "KBV_EX_MIO_ULB_Reference_Has_Member",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Diese Extension dient der Referenzierung zu näher beschreibenden Profilen des vorliegenden Sachverhalts und wird genutzt, wenn in einer Observation eine Referenzierung über das Element \"hasMember\" nicht möglich ist.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Diese Extension dient der Referenzierung zu näher beschreibenden Profilen des vorliegenden Sachverhalts und wird genutzt, wenn in einer Observation eine Referenzierung über das Element \"hasMember\" nicht möglich ist."
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Has_Member"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]:valueReference",
+        "path": "Extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]:valueReference.reference",
+        "path": "Extension.value[x].reference",
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x]:valueReference.type",
+        "path": "Extension.value[x].type",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x]:valueReference.identifier",
+        "path": "Extension.value[x].identifier",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x]:valueReference.display",
+        "path": "Extension.value[x].display",
+        "max": "0"
+      }
+    ]
+  }
+}

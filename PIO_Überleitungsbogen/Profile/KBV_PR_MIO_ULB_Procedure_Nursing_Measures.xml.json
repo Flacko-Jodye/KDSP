@@ -1,0 +1,542 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_Procedure_Nursing_Measures",
+  "title": "KBV_PR_MIO_ULB_Procedure_Nursing_Measures",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil bildet eine pflegerische Maßnahme ab.",
+  "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "definition": "Dieses Profil bildet eine pflegerische Maßnahme ab."
+      },
+      {
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
+        "min": 1
+      },
+      {
+        "id": "Procedure.meta.versionId",
+        "path": "Procedure.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.meta.lastUpdated",
+        "path": "Procedure.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.meta.source",
+        "path": "Procedure.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Nursing_Measures|1.0.0"
+      },
+      {
+        "id": "Procedure.meta.security",
+        "path": "Procedure.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.meta.tag",
+        "path": "Procedure.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.implicitRules",
+        "path": "Procedure.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.language",
+        "path": "Procedure.language",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.text",
+        "path": "Procedure.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Procedure.text.status",
+        "path": "Procedure.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "Procedure.contained",
+        "path": "Procedure.contained",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Procedure.extension:zeitplan",
+        "path": "Procedure.extension",
+        "sliceName": "zeitplan",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Timetable"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:anlassUrsache",
+        "path": "Procedure.extension",
+        "sliceName": "anlassUrsache",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ULB_Reference_Reason_Cause"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:anlassUrsache.extension",
+        "path": "Procedure.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Procedure.extension:anlassUrsache.extension:referenzAnlassUrsache",
+        "path": "Procedure.extension.extension",
+        "sliceName": "referenzAnlassUrsache",
+        "min": 0
+      },
+      {
+        "id": "Procedure.extension:anlassUrsache.extension:referenzAnlassUrsache.value[x]:valueReference",
+        "path": "Procedure.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Care_Problem|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Striking_Behavior|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Risk|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Continence_Differentiated_Assessment|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Continence_Differentiated_Assessment|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Aid|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Care_Level|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Qualitative_Description_Breathing|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Falls_Last_6_Months|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Degree_Of_Disability|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Wish|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Assessment_Free|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Height|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Weight|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Rate|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Blood_Pressure|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Body_Temperature|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Heart_Rate|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Peripheral_Oxygen_Saturation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Glucose_Concentration|1.0.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.identifier",
+        "path": "Procedure.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.instantiatesCanonical",
+        "path": "Procedure.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.instantiatesUri",
+        "path": "Procedure.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.partOf",
+        "path": "Procedure.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "patternCode": "completed"
+      },
+      {
+        "id": "Procedure.statusReason",
+        "path": "Procedure.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode",
+        "path": "Procedure.code.coding",
+        "sliceName": "snomedCode",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Interventions_ICNP|1.0.0"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode.display",
+        "path": "Procedure.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding:snomedCode.userSelected",
+        "path": "Procedure.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.code.text",
+        "path": "Procedure.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Patient|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject.reference",
+        "path": "Procedure.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject.type",
+        "path": "Procedure.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.subject.identifier",
+        "path": "Procedure.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.subject.display",
+        "path": "Procedure.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.encounter",
+        "path": "Procedure.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]:performedPeriod",
+        "path": "Procedure.performed[x]",
+        "sliceName": "performedPeriod",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]:performedPeriod.start",
+        "path": "Procedure.performed[x].start",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]:performedPeriod.end",
+        "path": "Procedure.performed[x].end",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.recorder",
+        "path": "Procedure.recorder",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.asserter",
+        "path": "Procedure.asserter",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer",
+        "path": "Procedure.performer",
+        "max": "1"
+      },
+      {
+        "id": "Procedure.performer.function",
+        "path": "Procedure.performer.function",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer.actor",
+        "path": "Procedure.performer.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Practitioner|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_PractitionerRole|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Organization|1.0.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.performer.actor.reference",
+        "path": "Procedure.performer.actor.reference",
+        "min": 1
+      },
+      {
+        "id": "Procedure.performer.actor.type",
+        "path": "Procedure.performer.actor.type",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer.actor.identifier",
+        "path": "Procedure.performer.actor.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer.actor.display",
+        "path": "Procedure.performer.actor.display",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer.onBehalfOf",
+        "path": "Procedure.performer.onBehalfOf",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.location",
+        "path": "Procedure.location",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.reasonCode",
+        "path": "Procedure.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.reasonReference",
+        "path": "Procedure.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.outcome",
+        "path": "Procedure.outcome",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.complicationDetail",
+        "path": "Procedure.complicationDetail",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.followUp",
+        "path": "Procedure.followUp",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.note.author[x]",
+        "path": "Procedure.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.note.time",
+        "path": "Procedure.note.time",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.note.text",
+        "path": "Procedure.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.focalDevice",
+        "path": "Procedure.focalDevice",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.usedReference",
+        "path": "Procedure.usedReference",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.usedCode",
+        "path": "Procedure.usedCode",
+        "max": "0"
+      }
+    ]
+  }
+}

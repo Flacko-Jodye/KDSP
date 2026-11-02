@@ -1,0 +1,334 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information",
+  "version": "1.0.0",
+  "name": "KBV_PR_MIO_ULB_Provenance_Source_of_Information",
+  "title": "KBV_PR_MIO_ULB_Provenance_Source_of_Information",
+  "status": "active",
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "description": "Dieses Profil bildet die Informationsquelle ab.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "fhirauditevent",
+      "uri": "http://hl7.org/fhir/auditevent",
+      "name": "FHIR AuditEvent Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance",
+        "path": "Provenance",
+        "definition": "Dieses Profil bildet die Informationsquelle ab."
+      },
+      {
+        "id": "Provenance.meta",
+        "path": "Provenance.meta",
+        "min": 1
+      },
+      {
+        "id": "Provenance.meta.versionId",
+        "path": "Provenance.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.meta.lastUpdated",
+        "path": "Provenance.meta.lastUpdated",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.meta.source",
+        "path": "Provenance.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.meta.profile",
+        "path": "Provenance.meta.profile",
+        "min": 1,
+        "max": "1",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Provenance_Source_of_Information|1.0.0"
+      },
+      {
+        "id": "Provenance.meta.security",
+        "path": "Provenance.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.meta.tag",
+        "path": "Provenance.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.implicitRules",
+        "path": "Provenance.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.language",
+        "path": "Provenance.language",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.text",
+        "path": "Provenance.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Provenance.text.status",
+        "path": "Provenance.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "Provenance.contained",
+        "path": "Provenance.contained",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Condition_Medical_Problem_Diagnosis|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Device_Implant|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Deprivation_Liberty_Measures|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_MedicationStatement_Administration_Instruction|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Procedure_Isolation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_AllergyIntolerance|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Pain|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Fecal_Drainage|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Urinary_Drainage|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Type|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Food_Administration_Form|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Nutrition|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Cognitive_Awareness|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Orientation|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Support|1.0.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_Observation_Respiratory_Access|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.target.reference",
+        "path": "Provenance.target.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.target.type",
+        "path": "Provenance.target.type",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.target.identifier",
+        "path": "Provenance.target.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.target.display",
+        "path": "Provenance.target.display",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.occurred[x]",
+        "path": "Provenance.occurred[x]",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.policy",
+        "path": "Provenance.policy",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.location",
+        "path": "Provenance.location",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.reason",
+        "path": "Provenance.reason",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.activity",
+        "path": "Provenance.activity",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "max": "1"
+      },
+      {
+        "id": "Provenance.agent.type",
+        "path": "Provenance.agent.type",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent.role",
+        "path": "Provenance.agent.role",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent.who.extension",
+        "path": "Provenance.agent.who.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Provenance.agent.who.extension:data-absent-reason",
+        "path": "Provenance.agent.who.extension",
+        "sliceName": "data-absent-reason",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent.who.extension:data-absent-reason.value[x]",
+        "path": "Provenance.agent.who.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Provenance.agent.who.extension:data-absent-reason.value[x]:valueCode",
+        "path": "Provenance.agent.who.extension.value[x]",
+        "sliceName": "valueCode",
+        "min": 1,
+        "patternCode": "unknown"
+      },
+      {
+        "id": "Provenance.agent.who.reference",
+        "path": "Provenance.agent.who.reference",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent.who.type",
+        "path": "Provenance.agent.who.type",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent.who.identifier",
+        "path": "Provenance.agent.who.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.agent.who.display",
+        "path": "Provenance.agent.who.display",
+        "min": 1,
+        "patternString": "unknown"
+      },
+      {
+        "id": "Provenance.agent.onBehalfOf",
+        "path": "Provenance.agent.onBehalfOf",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.entity",
+        "path": "Provenance.entity",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.entity.role",
+        "path": "Provenance.entity.role",
+        "patternCode": "source",
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.entity.what",
+        "path": "Provenance.entity.what",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ULB_DocumentReference_ePa_Reference|1.0.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.entity.what.reference",
+        "path": "Provenance.entity.what.reference",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.entity.what.type",
+        "path": "Provenance.entity.what.type",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.entity.what.identifier",
+        "path": "Provenance.entity.what.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.entity.what.display",
+        "path": "Provenance.entity.what.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Provenance.entity.agent",
+        "path": "Provenance.entity.agent",
+        "max": "0"
+      },
+      {
+        "id": "Provenance.signature",
+        "path": "Provenance.signature",
+        "max": "0"
+      }
+    ]
+  }
+}

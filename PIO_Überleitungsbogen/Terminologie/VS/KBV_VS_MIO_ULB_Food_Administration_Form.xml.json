@@ -1,0 +1,179 @@
+{
+  "resourceType": "ValueSet",
+  "id": "KBV-VS-MIO-ULB-Food-Administration-Form",
+  "url": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_ULB_Food_Administration_Form",
+  "version": "1.0.0",
+  "name": "KBV_VS_MIO_ULB_Food_Administration_Form",
+  "title": "Kostdarreichungsform",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Kassenärztliche Bundesvereinigung (KBV)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://mio.kbv.de"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Valueset enthält die Codes zur Beschreibung von Kostdarreichungsform.",
+  "immutable": false,
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "concept": [
+          {
+            "code": "61420007",
+            "display": "Tube feeding of patient (regime/therapy)"
+          },
+          {
+            "code": "230114001",
+            "display": "Central line feeding (regime/therapy)"
+          },
+          {
+            "code": "230115000",
+            "display": "Peripheral line feeding (regime/therapy)"
+          },
+          {
+            "code": "225372007",
+            "display": "Total parenteral nutrition (regime/therapy)"
+          },
+          {
+            "code": "225373002",
+            "display": "Percutaneous endoscopic gastrostomy feeding (regime/therapy)"
+          },
+          {
+            "code": "289156007:363714003=870690008",
+            "display": "Feeding finding (finding) : Interprets (attribute) = Oral intake (observable entity)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "75118006"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "d683169f-619a-11ed-95f5-005056ad7401",
+    "timestamp": "2022-11-11T08:28:37+00:00",
+    "total": 17,
+    "offset": 0,
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "61420007",
+        "display": "Tube feeding of patient (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "230114001",
+        "display": "Central line feeding (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "230115000",
+        "display": "Peripheral line feeding (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225372007",
+        "display": "Total parenteral nutrition (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "225373002",
+        "display": "Percutaneous endoscopic gastrostomy feeding (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "289156007:363714003=870690008",
+        "display": "Feeding finding (finding) : Interprets (attribute) = Oral intake (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "113148007",
+        "display": "Fluid intake encouragement (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "182923009",
+        "display": "Nil by mouth (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "183027000",
+        "display": "Prolonged intravenous feeding (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "25156005",
+        "display": "Intravenous feeding of patient (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "25877005",
+        "display": "Mealtime assistance (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "315211006",
+        "display": "Re-introduction of fiber (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "37041007",
+        "display": "Forced feeding of patient (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "386421004",
+        "display": "Self-care assistance: feeding (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "40043006",
+        "display": "Bottle feeding of patient (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "49704005",
+        "display": "Food intake encouragement (regime/therapy)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220331",
+        "code": "53370001",
+        "display": "Routine feeding of patient (regime/therapy)"
+      }
+    ]
+  }
+}
